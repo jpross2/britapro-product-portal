@@ -73,43 +73,50 @@
     "name": "RO 3Stage Standard",
     "category": "Drinking Water",
     "path": "sales-sheets/drinking-water/BP_RO_3Stage_Standard.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_Standard_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_Standard_TechSheet.DIGITAL.pdf",
+    "subcategory": "Reverse Osmosis (RO)"
   },
   {
     "name": "RO 4Stage QuickTwist",
     "category": "Drinking Water",
     "path": "sales-sheets/drinking-water/BP_RO_4Stage_QuickTwist.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_RO_Platinum 4-Stage_QuickTwist_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_RO_Platinum 4-Stage_QuickTwist_TechSheet.DIGITAL.pdf",
+    "subcategory": "Reverse Osmosis (RO)"
   },
   {
     "name": "RO Tankless",
     "category": "Drinking Water",
     "path": "sales-sheets/drinking-water/BP_RO_Tankless.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_RO_Tankless_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_RO_Tankless_TechSheet.DIGITAL.pdf",
+    "subcategory": "Reverse Osmosis (RO)"
   },
   {
     "name": "SingleStage 10in Carbon",
     "category": "Drinking Water",
     "path": "sales-sheets/drinking-water/BP_SingleStage_10in_CTO.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_SingleStage_10in_CTO_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_SingleStage_10in_CTO_TechSheet.DIGITAL.pdf",
+    "subcategory": "Single Stage Filters"
   },
   {
     "name": "SingleStage 14in Lead",
     "category": "Drinking Water",
     "path": "sales-sheets/drinking-water/BP_SingleStage_14in_Lead.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_SingleStage_14in_LEAD_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_SingleStage_14in_LEAD_TechSheet.DIGITAL.pdf",
+    "subcategory": "Single Stage Filters"
   },
   {
     "name": "SingleStage 14in PFAS",
     "category": "Drinking Water",
     "path": "sales-sheets/drinking-water/BP_SingleStage_14in_PFAS.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_SingleStage_14in_PFAS_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_SingleStage_14in_PFAS_TechSheet.DIGITAL.pdf",
+    "subcategory": "Single Stage Filters"
   },
   {
     "name": "SingleStage Microbiological",
     "category": "Drinking Water",
     "path": "sales-sheets/drinking-water/BP_SingleStage_Microbiological.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_SingleStage_Microbiological_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_SingleStage_Microbiological_TechSheet.DIGITAL.pdf",
+    "subcategory": "Single Stage Filters"
   },
   {
     "name": "Softener",
@@ -182,6 +189,7 @@
   {
     "name": "RO 3-Stage QuickTwist",
     "category": "Drinking Water",
-    "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.pdf",
+    "subcategory": "Reverse Osmosis (RO)"
   }
 ]
