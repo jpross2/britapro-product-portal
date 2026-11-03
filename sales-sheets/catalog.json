@@ -39,8 +39,7 @@
     "path": "sales-sheets/whole-house/BP_PlatValve_Aeration.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Aeration_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
-    "imageSku": "BPKATAIR1J",
-    "imageNote": "Representative BritaPRO product image"
+    "imagePath": "product-images/BritaPRO_Platinum_Catalytic_Carbon_System_Only.png"
   },
   {
     "name": "Platinum Valve Catalytic Carbon",
@@ -48,8 +47,7 @@
     "path": "sales-sheets/whole-house/BP_PlatValve_CatCarbon.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_CatalyticCarbon_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
-    "imageSku": "BPCAT150J",
-    "imageNote": "Representative BritaPRO product image"
+    "imagePath": "product-images/BritaPRO_Platinum_Catalytic_Carbon_System_Only.png"
   },
   {
     "name": "Platinum Valve Neutralizer",
@@ -57,8 +55,7 @@
     "path": "sales-sheets/whole-house/BP_PlatValve_Neutralizer.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Neutralizer_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
-    "imageSku": "BP150NJ",
-    "imageNote": "Representative BritaPRO product image"
+    "imagePath": "product-images/BritaPRO_Platinum_Catalytic_Carbon_System_Only.png"
   },
   {
     "name": "Platinum Valve Nitrate",
@@ -73,8 +70,7 @@
     "path": "sales-sheets/whole-house/BP_PlatValve_Particulate.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Particulate_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
-    "imageSku": "BPST150J",
-    "imageNote": "Representative BritaPRO product image"
+    "imagePath": "product-images/BritaPRO_Platinum_Catalytic_Carbon_System_Only.png"
   },
   {
     "name": "Platinum Valve PFAS",
