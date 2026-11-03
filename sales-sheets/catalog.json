@@ -4,7 +4,8 @@
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_Leak Detection.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_LeakDetection_TechSheet.DIGITAL.pdf",
-    "subcategory": "Other Whole-House Products"
+    "subcategory": "Other Whole-House Products",
+    "imagePath": "product-images/sales-BP_Leak-Detection.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Non-backwashing Anti-scale",
@@ -13,7 +14,8 @@
     "techPath": "tech-sheets/whole-house/BP_NRV Anti-scale_TechSheet.DIGITAL.pdf",
     "subcategory": "Non-Backwashing Filters (NRV)",
     "imageSku": "BPNRVAS10J",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_NRV_Anti-scale.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Non-backwashing Catalytic Carbon",
@@ -22,7 +24,8 @@
     "techPath": "tech-sheets/whole-house/BP_NRV Cat Carbon_TechSheet.DIGITAL.pdf",
     "subcategory": "Non-Backwashing Filters (NRV)",
     "imageSku": "BPNRVCAT150J",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_NRV_CatCarbon.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Non-backwashing Neutralizer",
@@ -31,7 +34,8 @@
     "techPath": "tech-sheets/whole-house/BP_NRV Neutralizer_TechSheet.DIGITAL.pdf",
     "subcategory": "Non-Backwashing Filters (NRV)",
     "imageSku": "BPNRVAN150",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_NRV_Neutralizer.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Platinum Valve Aeration",
@@ -40,7 +44,8 @@
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Aeration_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
     "imageSku": "BPKATAIR1J",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_PlatValve_Aeration.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Platinum Valve Catalytic Carbon",
@@ -49,7 +54,8 @@
     "techPath": "tech-sheets/whole-house/BP_PlatValve_CatalyticCarbon_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
     "imageSku": "BPCAT150J",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_PlatValve_CatCarbon.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Platinum Valve Neutralizer",
@@ -58,14 +64,16 @@
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Neutralizer_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
     "imageSku": "BP150NJ",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_PlatValve_Neutralizer.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Platinum Valve Nitrate",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_PlatValve_Nitrate.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Nitrate_TechSheet.DIGITAL.pdf",
-    "subcategory": "Specialty Filters"
+    "subcategory": "Specialty Filters",
+    "imagePath": "product-images/sales-BP_PlatValve_Nitrate.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Platinum Valve Particulate",
@@ -74,7 +82,8 @@
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Particulate_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
     "imageSku": "BPST150J",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_PlatValve_Particulate.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Platinum Valve PFAS",
@@ -83,14 +92,16 @@
     "techPath": "tech-sheets/whole-house/BP_PlatValve_PFAS_TechSheet.DIGITAL.pdf",
     "subcategory": "Specialty Filters",
     "imageSku": "BP150PFAJ",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_PlatValve_PFAS.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "RO 3Stage Standard",
     "category": "Drinking Water",
     "path": "sales-sheets/drinking-water/BP_RO_3Stage_Standard.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_Standard_TechSheet.DIGITAL.pdf",
-    "subcategory": "Reverse Osmosis (RO)"
+    "subcategory": "Reverse Osmosis (RO)",
+    "imagePath": "product-images/sales-BP_RO_3Stage_Standard.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "RO 4Stage QuickTwist",
@@ -99,7 +110,8 @@
     "techPath": "tech-sheets/drinking-water/BP_RO_Platinum 4-Stage_QuickTwist_TechSheet.DIGITAL.pdf",
     "subcategory": "Reverse Osmosis (RO)",
     "imageSku": "BPQCRO-75",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_RO_4Stage_QuickTwist.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "RO Tankless",
@@ -108,7 +120,8 @@
     "techPath": "tech-sheets/drinking-water/BP_RO_Tankless_TechSheet.DIGITAL.pdf",
     "subcategory": "Reverse Osmosis (RO)",
     "imageSku": "BPRO600TAR",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_RO_Tankless.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "SingleStage 10in Carbon",
@@ -117,7 +130,8 @@
     "techPath": "tech-sheets/drinking-water/BP_SingleStage_10in_CTO_TechSheet.DIGITAL.pdf",
     "subcategory": "Single Stage Filters",
     "imageSku": "BPUSS4000",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_SingleStage_10in_CTO.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "SingleStage 14in Lead",
@@ -126,7 +140,8 @@
     "techPath": "tech-sheets/drinking-water/BP_SingleStage_14in_LEAD_TechSheet.DIGITAL.pdf",
     "subcategory": "Single Stage Filters",
     "imageSku": "BPUSS4003",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_SingleStage_14in_Lead.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "SingleStage 14in PFAS",
@@ -135,14 +150,16 @@
     "techPath": "tech-sheets/drinking-water/BP_SingleStage_14in_PFAS_TechSheet.DIGITAL.pdf",
     "subcategory": "Single Stage Filters",
     "imageSku": "BPUSS4005",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_SingleStage_14in_PFAS.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "SingleStage Microbiological",
     "category": "Drinking Water",
     "path": "sales-sheets/drinking-water/BP_SingleStage_Microbiological.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/drinking-water/BP_SingleStage_Microbiological_TechSheet.DIGITAL.pdf",
-    "subcategory": "Single Stage Filters"
+    "subcategory": "Single Stage Filters",
+    "imagePath": "product-images/sales-BP_SingleStage_Microbiological.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Softener",
@@ -151,7 +168,8 @@
     "techPath": "tech-sheets/whole-house/BP_Softener_TechSheet.DIGITAL.pdf",
     "subcategory": "Water Softeners",
     "imageSku": "BP150J",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_Softener.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Softener Carbon Mid-Plate",
@@ -160,14 +178,16 @@
     "techPath": "tech-sheets/whole-house/BP_Softener_CTO_Mid-Plate_TechSheet.DIGITAL.pdf",
     "subcategory": "Mid-Plates",
     "imageSku": "BPDCS150",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_Softener_CTO_MidPlate.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Softener Carbon MixedBed",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_Softener_CTO_MixedBed.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_Softener_CTO_Mixed Bed_TechSheet.DIGITAL.pdf",
-    "subcategory": "Mid-Plates"
+    "subcategory": "Mid-Plates",
+    "imagePath": "product-images/sales-BP_Softener_CTO_MixedBed.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "Softener Iron",
@@ -176,7 +196,8 @@
     "techPath": "tech-sheets/whole-house/BP_Softener_Iron_TechSheet.DIGITAL.pdf",
     "subcategory": "Water Softeners",
     "imageSku": "BPFES150",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_Softener_Iron.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "TitaniumLT 1 Stage GREY",
@@ -185,7 +206,8 @@
     "techPath": "tech-sheets/drinking-water/BP_Titanium LT_1 Stage_TechSheet.DIGITAL.pdf",
     "subcategory": "Titanium LT",
     "imageSku": "BP420H1BKIT",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_TitaniumLT_1-Stage_GREY.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "TitaniumLT 2 Stage GREY",
@@ -194,14 +216,16 @@
     "techPath": "tech-sheets/drinking-water/BP_Titanium LT_2 Stage_TechSheet.DIGITAL.pdf",
     "subcategory": "Titanium LT",
     "imageSku": "BP420-H-1DUO-B-KIT",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_TitaniumLT_2-Stage_GREY.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "TitaniumLT 3 Stage GREY",
     "category": "Whole-House",
     "path": "sales-sheets/drinking-water/BP_TitaniumLT_3 Stage_GREY.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/drinking-water/BP_Titanium LT_3 Stage_TechSheet.DIGITAL.pdf",
-    "subcategory": "Titanium LT"
+    "subcategory": "Titanium LT",
+    "imagePath": "product-images/sales-BP_TitaniumLT_3-Stage_GREY.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "UV",
@@ -210,24 +234,28 @@
     "techPath": "tech-sheets/drinking-water/BP_UV_TechSheet.DIGITAL.pdf",
     "subcategory": "UV Systems",
     "imageSku": "BPUV016",
-    "imageNote": "Representative BritaPRO product image"
+    "imageNote": "Representative BritaPRO product image",
+    "imagePath": "product-images/sales-BP_UV.SalesSheet.DIGITAL.webp"
   },
   {
     "name": "HYDRA BIG",
     "category": "Whole-House",
     "techPath": "tech-sheets/whole-house/BP_HYDRA_BIG_TechSheet.DIGITAL.pdf",
-    "subcategory": "Backwashing Filters"
+    "subcategory": "Backwashing Filters",
+    "imagePath": "product-images/tech-BP_HYDRA_BIG_TechSheet.DIGITAL.webp"
   },
   {
     "name": "HYDRA Standard",
     "category": "Whole-House",
     "techPath": "tech-sheets/whole-house/BP_HYDRA_Standard_TechSheet.DIGITAL.pdf",
-    "subcategory": "Backwashing Filters"
+    "subcategory": "Backwashing Filters",
+    "imagePath": "product-images/tech-BP_HYDRA_Standard_TechSheet.DIGITAL.webp"
   },
   {
     "name": "RO 3-Stage QuickTwist",
     "category": "Drinking Water",
     "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.pdf",
-    "subcategory": "Reverse Osmosis (RO)"
+    "subcategory": "Reverse Osmosis (RO)",
+    "imagePath": "product-images/tech-BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.webp"
   }
 ]
