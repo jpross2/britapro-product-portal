@@ -3,61 +3,71 @@
     "name": "Leak Detection",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_Leak Detection.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_LeakDetection_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_LeakDetection_TechSheet.DIGITAL.pdf",
+    "subcategory": "Other Whole-House Products"
   },
   {
     "name": "Non-backwashing Anti-scale",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_NRV_Anti-scale.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_NRV Anti-scale_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_NRV Anti-scale_TechSheet.DIGITAL.pdf",
+    "subcategory": "Non-Backwashing Filters (NRV)"
   },
   {
     "name": "Non-backwashing Catalytic Carbon",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_NRV_CatCarbon.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_NRV Cat Carbon_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_NRV Cat Carbon_TechSheet.DIGITAL.pdf",
+    "subcategory": "Non-Backwashing Filters (NRV)"
   },
   {
     "name": "Non-backwashing Neutralizer",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_NRV_Neutralizer.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_NRV Neutralizer_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_NRV Neutralizer_TechSheet.DIGITAL.pdf",
+    "subcategory": "Non-Backwashing Filters (NRV)"
   },
   {
     "name": "Platinum Valve Aeration",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_PlatValve_Aeration.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_PlatValve_Aeration_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_PlatValve_Aeration_TechSheet.DIGITAL.pdf",
+    "subcategory": "Backwashing Filters"
   },
   {
     "name": "Platinum Valve Catalytic Carbon",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_PlatValve_CatCarbon.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_PlatValve_CatalyticCarbon_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_PlatValve_CatalyticCarbon_TechSheet.DIGITAL.pdf",
+    "subcategory": "Backwashing Filters"
   },
   {
     "name": "Platinum Valve Neutralizer",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_PlatValve_Neutralizer.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_PlatValve_Neutralizer_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_PlatValve_Neutralizer_TechSheet.DIGITAL.pdf",
+    "subcategory": "Backwashing Filters"
   },
   {
     "name": "Platinum Valve Nitrate",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_PlatValve_Nitrate.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_PlatValve_Nitrate_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_PlatValve_Nitrate_TechSheet.DIGITAL.pdf",
+    "subcategory": "Specialty Filters"
   },
   {
     "name": "Platinum Valve Particulate",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_PlatValve_Particulate.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_PlatValve_Particulate_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_PlatValve_Particulate_TechSheet.DIGITAL.pdf",
+    "subcategory": "Backwashing Filters"
   },
   {
     "name": "Platinum Valve PFAS",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_PlatValve_PFAS.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_PlatValve_PFAS_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_PlatValve_PFAS_TechSheet.DIGITAL.pdf",
+    "subcategory": "Specialty Filters"
   },
   {
     "name": "RO 3Stage Standard",
@@ -105,59 +115,69 @@
     "name": "Softener",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_Softener.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_Softener_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_Softener_TechSheet.DIGITAL.pdf",
+    "subcategory": "Water Softeners"
   },
   {
     "name": "Softener Carbon Mid-Plate",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_Softener_CTO_MidPlate.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_Softener_CTO_Mid-Plate_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_Softener_CTO_Mid-Plate_TechSheet.DIGITAL.pdf",
+    "subcategory": "Mid-Plates"
   },
   {
     "name": "Softener Carbon MixedBed",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_Softener_CTO_MixedBed.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_Softener_CTO_Mixed Bed_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_Softener_CTO_Mixed Bed_TechSheet.DIGITAL.pdf",
+    "subcategory": "Mid-Plates"
   },
   {
     "name": "Softener Iron",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_Softener_Iron.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_Softener_Iron_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_Softener_Iron_TechSheet.DIGITAL.pdf",
+    "subcategory": "Water Softeners"
   },
   {
     "name": "TitaniumLT 1 Stage GREY",
-    "category": "Drinking Water",
+    "category": "Whole-House",
     "path": "sales-sheets/drinking-water/BP_TitaniumLT_1 Stage_GREY.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_Titanium LT_1 Stage_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_Titanium LT_1 Stage_TechSheet.DIGITAL.pdf",
+    "subcategory": "Titanium LT"
   },
   {
     "name": "TitaniumLT 2 Stage GREY",
-    "category": "Drinking Water",
+    "category": "Whole-House",
     "path": "sales-sheets/drinking-water/BP_TitaniumLT_2 Stage_GREY.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_Titanium LT_2 Stage_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_Titanium LT_2 Stage_TechSheet.DIGITAL.pdf",
+    "subcategory": "Titanium LT"
   },
   {
     "name": "TitaniumLT 3 Stage GREY",
-    "category": "Drinking Water",
+    "category": "Whole-House",
     "path": "sales-sheets/drinking-water/BP_TitaniumLT_3 Stage_GREY.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_Titanium LT_3 Stage_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_Titanium LT_3 Stage_TechSheet.DIGITAL.pdf",
+    "subcategory": "Titanium LT"
   },
   {
     "name": "UV",
-    "category": "Drinking Water",
+    "category": "Whole-House",
     "path": "sales-sheets/drinking-water/BP_UV.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_UV_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/drinking-water/BP_UV_TechSheet.DIGITAL.pdf",
+    "subcategory": "UV Systems"
   },
   {
     "name": "HYDRA BIG",
     "category": "Whole-House",
-    "techPath": "tech-sheets/whole-house/BP_HYDRA_BIG_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_HYDRA_BIG_TechSheet.DIGITAL.pdf",
+    "subcategory": "Backwashing Filters"
   },
   {
     "name": "HYDRA Standard",
     "category": "Whole-House",
-    "techPath": "tech-sheets/whole-house/BP_HYDRA_Standard_TechSheet.DIGITAL.pdf"
+    "techPath": "tech-sheets/whole-house/BP_HYDRA_Standard_TechSheet.DIGITAL.pdf",
+    "subcategory": "Backwashing Filters"
   },
   {
     "name": "RO 3-Stage QuickTwist",
