@@ -212,13 +212,15 @@
     "name": "HYDRA BIG",
     "category": "Whole-House",
     "techPath": "tech-sheets/whole-house/BP_HYDRA_BIG_TechSheet.DIGITAL.pdf",
-    "subcategory": "Backwashing Filters"
+    "subcategory": "Backwashing Filters",
+    "imagePath": "product-images/BritaPRO_Platinum_Catalytic_Carbon_System_Only.png"
   },
   {
     "name": "HYDRA Standard",
     "category": "Whole-House",
     "techPath": "tech-sheets/whole-house/BP_HYDRA_Standard_TechSheet.DIGITAL.pdf",
-    "subcategory": "Backwashing Filters"
+    "subcategory": "Backwashing Filters",
+    "imagePath": "product-images/BritaPRO_Platinum_Catalytic_Carbon_System_Only.png"
   },
   {
     "name": "RO 3-Stage QuickTwist",
