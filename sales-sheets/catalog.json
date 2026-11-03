@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Leak Detection",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_Leak Detection.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Non-backwashing Anti-scale",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_NRV_Anti-scale.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Non-backwashing Catalytic Carbon",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_NRV_CatCarbon.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Non-backwashing Neutralizer",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_NRV_Neutralizer.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Platinum Valve Aeration",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_PlatValve_Aeration.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Platinum Valve Catalytic Carbon",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_PlatValve_CatCarbon.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Platinum Valve Neutralizer",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_PlatValve_Neutralizer.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Platinum Valve Nitrate",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_PlatValve_Nitrate.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Platinum Valve Particulate",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_PlatValve_Particulate.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Platinum Valve PFAS",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_PlatValve_PFAS.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "RO 3Stage Standard",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_RO_3Stage_Standard.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "RO 4Stage QuickTwist",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_RO_4Stage_QuickTwist.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "RO Tankless",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_RO_Tankless.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "SingleStage 10in Carbon",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_SingleStage_10in_CTO.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "SingleStage 14in Lead",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_SingleStage_14in_Lead.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "SingleStage 14in PFAS",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_SingleStage_14in_PFAS.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "SingleStage Microbiological",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_SingleStage_Microbiological.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Softener",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_Softener.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Softener Carbon Mid-Plate",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_Softener_CTO_MidPlate.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Softener Carbon MixedBed",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_Softener_CTO_MixedBed.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "Softener Iron",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_Softener_Iron.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "TitaniumLT 1 Stage GREY",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_TitaniumLT_1 Stage_GREY.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "TitaniumLT 2 Stage GREY",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_TitaniumLT_2 Stage_GREY.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "TitaniumLT 3 Stage GREY",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_TitaniumLT_3 Stage_GREY.SalesSheet.DIGITAL.pdf"
+  },
+  {
+    "name": "UV",
+    "category": "Drinking Water",
+    "path": "sales-sheets/drinking-water/BP_UV.SalesSheet.DIGITAL.pdf"
+  }
+]
