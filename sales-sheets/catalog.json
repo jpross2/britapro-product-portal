@@ -89,7 +89,8 @@
     "path": "sales-sheets/drinking-water/BP_RO_3Stage_Standard.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_Standard_TechSheet.DIGITAL.pdf",
     "subcategory": "Reverse Osmosis (RO)",
-    "imagePath": "product-images/BP_RO_3Stage_Standard.png"
+    "imagePath": "product-images/BP_RO_3Stage_Standard.png",
+    "manualPath": "manuals/drinking-water/Platinum_RO_3Stage_Standard_Manual.DIGITAL.pdf"
   },
   {
     "name": "RO 4Stage QuickTwist",
@@ -98,7 +99,8 @@
     "techPath": "tech-sheets/drinking-water/BP_RO_Platinum 4-Stage_QuickTwist_TechSheet.DIGITAL.pdf",
     "subcategory": "Reverse Osmosis (RO)",
     "imageSku": "BPQCRO-75",
-    "imagePath": "product-images/BP_RO_4Stage_QuickTwist.png"
+    "imagePath": "product-images/BP_RO_4Stage_QuickTwist.png",
+    "manualPath": "manuals/drinking-water/Platinum_RO_4Stage_QT_Manual.DIGITAL.pdf"
   },
   {
     "name": "RO Tankless",
@@ -107,7 +109,8 @@
     "techPath": "tech-sheets/drinking-water/BP_RO_Tankless_TechSheet.DIGITAL.pdf",
     "subcategory": "Reverse Osmosis (RO)",
     "imageSku": "BPRO600TAR",
-    "imagePath": "product-images/BP_RO_Tankless.png"
+    "imagePath": "product-images/BP_RO_Tankless.png",
+    "manualPath": "manuals/drinking-water/Platinum_RO_Tankless_Manual.DIGITAL.pdf"
   },
   {
     "name": "SingleStage 10in Carbon",
@@ -116,7 +119,8 @@
     "techPath": "tech-sheets/drinking-water/BP_SingleStage_10in_CTO_TechSheet.DIGITAL.pdf",
     "subcategory": "Single Stage Filters",
     "imageSku": "BPUSS4000",
-    "imagePath": "product-images/BP_SingleStage_10in_CTO.png"
+    "imagePath": "product-images/BP_SingleStage_10in_CTO.png",
+    "manualPath": "manuals/drinking-water/Platinum_SingleStage_10inch_CTO_Manual.DIGITAL.pdf"
   },
   {
     "name": "SingleStage 14in Lead",
@@ -125,7 +129,8 @@
     "techPath": "tech-sheets/drinking-water/BP_SingleStage_14in_LEAD_TechSheet.DIGITAL.pdf",
     "subcategory": "Single Stage Filters",
     "imageSku": "BPUSS4003",
-    "imagePath": "product-images/BP_SingleStage_14in_Lead.png"
+    "imagePath": "product-images/BP_SingleStage_14in_Lead.png",
+    "manualPath": "manuals/drinking-water/Platinum_SingleStage_14inch_LEAD_Manual.DIGITAL.pdf"
   },
   {
     "name": "SingleStage 14in PFAS",
@@ -134,7 +139,8 @@
     "techPath": "tech-sheets/drinking-water/BP_SingleStage_14in_PFAS_TechSheet.DIGITAL.pdf",
     "subcategory": "Single Stage Filters",
     "imageSku": "BPUSS4005",
-    "imagePath": "product-images/BP_SingleStage_14in_PFAS.png"
+    "imagePath": "product-images/BP_SingleStage_14in_PFAS.png",
+    "manualPath": "manuals/drinking-water/Platinum_SingleStage_14inch_PFAS_Manual.DIGITAL.pdf"
   },
   {
     "name": "SingleStage Microbiological",
@@ -142,7 +148,8 @@
     "path": "sales-sheets/drinking-water/BP_SingleStage_Microbiological.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/drinking-water/BP_SingleStage_Microbiological_TechSheet.DIGITAL.pdf",
     "subcategory": "Single Stage Filters",
-    "imagePath": "product-images/BP_SingleStage_Microbiological.png"
+    "imagePath": "product-images/BP_SingleStage_Microbiological.png",
+    "manualPath": "manuals/drinking-water/Platinum_SingleStage_Microbiological_Manual.DIGITAL.pdf"
   },
   {
     "name": "Softener",
