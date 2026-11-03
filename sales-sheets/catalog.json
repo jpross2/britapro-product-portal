@@ -255,7 +255,6 @@
     "name": "RO 3-Stage QuickTwist",
     "category": "Drinking Water",
     "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.pdf",
-    "subcategory": "Reverse Osmosis (RO)",
-    "imagePath": "product-images/tech-BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.webp"
+    "subcategory": "Reverse Osmosis (RO)"
   }
 ]
