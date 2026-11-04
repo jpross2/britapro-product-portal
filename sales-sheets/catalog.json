@@ -5,7 +5,11 @@
     "path": "sales-sheets/whole-house/BP_Leak Detection.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_LeakDetection_TechSheet.DIGITAL.pdf",
     "subcategory": "Other Whole-House Products",
-    "imagePath": "product-images/BP_Leak_Detection.png"
+    "imagePath": "product-images/BP_Leak_Detection.png",
+    "skus": [
+      "BPF104I"
+    ],
+    "imageSku": "BPF104I"
   },
   {
     "name": "Non-backwashing Anti-scale",
@@ -144,7 +148,11 @@
     "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_Standard_TechSheet.DIGITAL.pdf",
     "subcategory": "Reverse Osmosis (RO)",
     "imagePath": "product-images/BP_RO_3Stage_Standard.png",
-    "manualPath": "manuals/drinking-water/Platinum_RO_3Stage_Standard_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/drinking-water/Platinum_RO_3Stage_Standard_Manual.DIGITAL.pdf",
+    "skus": [
+      "BPLRO35"
+    ],
+    "imageSku": "BPLRO35"
   },
   {
     "name": "RO 4Stage QuickTwist",
@@ -204,11 +212,11 @@
     "path": "sales-sheets/drinking-water/BP_SingleStage_14in_PFAS.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/drinking-water/BP_SingleStage_14in_PFAS_TechSheet.DIGITAL.pdf",
     "subcategory": "Single Stage Filters",
-    "imageSku": "BPUSS4005",
+    "imageSku": "BPUSS4004",
     "imagePath": "product-images/BP_SingleStage_14in_PFAS.png",
     "manualPath": "manuals/drinking-water/Platinum_SingleStage_14inch_PFAS_Manual.DIGITAL.pdf",
     "skus": [
-      "BPUSS4005"
+      "BPUSS4004"
     ]
   },
   {
@@ -220,8 +228,9 @@
     "imagePath": "product-images/BP_SingleStage_Microbiological.png",
     "manualPath": "manuals/drinking-water/Platinum_SingleStage_Microbiological_Manual.DIGITAL.pdf",
     "skus": [
-      "BPUSS4004"
-    ]
+      "BPUSS4005"
+    ],
+    "imageSku": "BPUSS4005"
   },
   {
     "name": "Softener",
@@ -342,6 +351,10 @@
     "category": "Drinking Water",
     "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.pdf",
     "subcategory": "Reverse Osmosis (RO)",
-    "imagePath": "product-images/BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.png"
+    "imagePath": "product-images/BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.png",
+    "skus": [
+      "BPQC50"
+    ],
+    "imageSku": "BPQC50"
   }
 ]
