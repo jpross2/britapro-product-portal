@@ -225,14 +225,14 @@
     "name": "HYDRA BIG",
     "category": "Whole-House",
     "techPath": "tech-sheets/whole-house/BP_HYDRA_BIG_TechSheet.DIGITAL.pdf",
-    "subcategory": "Spin Down Filters",
+    "subcategory": "Other Whole-House Products",
     "imagePath": "product-images/BP_HYDRA_BIG_TechSheet.DIGITAL.png"
   },
   {
     "name": "HYDRA Standard",
     "category": "Whole-House",
     "techPath": "tech-sheets/whole-house/BP_HYDRA_Standard_TechSheet.DIGITAL.pdf",
-    "subcategory": "Spin Down Filters",
+    "subcategory": "Other Whole-House Products",
     "imagePath": "product-images/BP_HYDRA_Standard_TechSheet.DIGITAL.png"
   },
   {
