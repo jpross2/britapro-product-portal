@@ -8,8 +8,7 @@
     "imagePath": "product-images/BP_Leak_Detection.png",
     "skus": [
       "BPF104I"
-    ],
-    "imageSku": "BPF104I"
+    ]
   },
   {
     "name": "Non-backwashing Anti-scale",
@@ -151,8 +150,7 @@
     "manualPath": "manuals/drinking-water/Platinum_RO_3Stage_Standard_Manual.DIGITAL.pdf",
     "skus": [
       "BPLRO35"
-    ],
-    "imageSku": "BPLRO35"
+    ]
   },
   {
     "name": "RO 4Stage QuickTwist",
@@ -354,7 +352,6 @@
     "imagePath": "product-images/BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.png",
     "skus": [
       "BPQC50"
-    ],
-    "imageSku": "BPQC50"
+    ]
   }
 ]
