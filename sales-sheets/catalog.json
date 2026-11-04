@@ -14,7 +14,11 @@
     "techPath": "tech-sheets/whole-house/BP_NRV Anti-scale_TechSheet.DIGITAL.pdf",
     "subcategory": "Non-Backwashing Filters (NRV)",
     "imageSku": "BPNRVAS10J",
-    "imagePath": "product-images/BP_NRV_Anti-scale.png"
+    "imagePath": "product-images/BP_NRV_Anti-scale.png",
+    "skus": [
+      "BPNRVAS10J",
+      "BPNRVAS15J"
+    ]
   },
   {
     "name": "Non-backwashing Catalytic Carbon",
@@ -23,7 +27,11 @@
     "techPath": "tech-sheets/whole-house/BP_NRV Cat Carbon_TechSheet.DIGITAL.pdf",
     "subcategory": "Non-Backwashing Filters (NRV)",
     "imageSku": "BPNRVCAT150J",
-    "imagePath": "product-images/BP_NRV_CatCarbon.png"
+    "imagePath": "product-images/BP_NRV_CatCarbon.png",
+    "skus": [
+      "BPNRVCAT100J",
+      "BPNRVCAT150J"
+    ]
   },
   {
     "name": "Non-backwashing Neutralizer",
@@ -32,7 +40,13 @@
     "techPath": "tech-sheets/whole-house/BP_NRV Neutralizer_TechSheet.DIGITAL.pdf",
     "subcategory": "Non-Backwashing Filters (NRV)",
     "imageSku": "BPNRVAN150",
-    "imagePath": "product-images/BP_NRV_Neutralizer.png"
+    "imagePath": "product-images/BP_NRV_Neutralizer.png",
+    "skus": [
+      "BPNRVAN100",
+      "BPNRVAN150",
+      "BPNRVANSM100",
+      "BPNRVANSM150"
+    ]
   },
   {
     "name": "Platinum Valve Aeration",
@@ -40,7 +54,13 @@
     "path": "sales-sheets/whole-house/BP_PlatValve_Aeration.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Aeration_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
-    "imagePath": "product-images/BP_PlatValve_Aeration.png"
+    "imagePath": "product-images/BP_PlatValve_Aeration.png",
+    "skus": [
+      "BPKATAIR1J",
+      "BPKATAIR021J",
+      "BPKATAIR2",
+      "BPKATAIR022"
+    ]
   },
   {
     "name": "Platinum Valve Catalytic Carbon",
@@ -48,7 +68,18 @@
     "path": "sales-sheets/whole-house/BP_PlatValve_CatCarbon.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_CatalyticCarbon_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
-    "imagePath": "product-images/BP_PlatValve_CatCarbon.png"
+    "imagePath": "product-images/BP_PlatValve_CatCarbon.png",
+    "skus": [
+      "BPCAT05B",
+      "BPCAT100J",
+      "BPCAT150J",
+      "BPCAT200",
+      "BP125CAT200",
+      "BPCAT300",
+      "BP15CAT3",
+      "BPCAT300-2",
+      "BP15FCAT4"
+    ]
   },
   {
     "name": "Platinum Valve Neutralizer",
@@ -56,7 +87,18 @@
     "path": "sales-sheets/whole-house/BP_PlatValve_Neutralizer.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Neutralizer_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
-    "imagePath": "product-images/BP_PlatValve_Neutralizer.png"
+    "imagePath": "product-images/BP_PlatValve_Neutralizer.png",
+    "skus": [
+      "BPAN100J",
+      "BPAN150J",
+      "BPAN200",
+      "BPAN300",
+      "BPANSM100",
+      "BPANC100",
+      "BPANSM150",
+      "BPANC150",
+      "BPANC200"
+    ]
   },
   {
     "name": "Platinum Valve Nitrate",
@@ -64,7 +106,11 @@
     "path": "sales-sheets/whole-house/BP_PlatValve_Nitrate.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Nitrate_TechSheet.DIGITAL.pdf",
     "subcategory": "Specialty Filters",
-    "imagePath": "product-images/BP_PlatValve_Nitrate.png"
+    "imagePath": "product-images/BP_PlatValve_Nitrate.png",
+    "skus": [
+      "BP150NJ",
+      "BP200N"
+    ]
   },
   {
     "name": "Platinum Valve Particulate",
@@ -72,7 +118,12 @@
     "path": "sales-sheets/whole-house/BP_PlatValve_Particulate.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Particulate_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
-    "imagePath": "product-images/BP_PlatValve_Particulate.png"
+    "imagePath": "product-images/BP_PlatValve_Particulate.png",
+    "skus": [
+      "BPST100J",
+      "BPST150J",
+      "BP125ST150J"
+    ]
   },
   {
     "name": "Platinum Valve PFAS",
@@ -81,7 +132,10 @@
     "techPath": "tech-sheets/whole-house/BP_PlatValve_PFAS_TechSheet.DIGITAL.pdf",
     "subcategory": "Specialty Filters",
     "imageSku": "BP150PFAJ",
-    "imagePath": "product-images/BP_PlatValve_PFAS.png"
+    "imagePath": "product-images/BP_PlatValve_PFAS.png",
+    "skus": [
+      "BP150PFAJ"
+    ]
   },
   {
     "name": "RO 3Stage Standard",
@@ -100,7 +154,10 @@
     "subcategory": "Reverse Osmosis (RO)",
     "imageSku": "BPQCRO-75",
     "imagePath": "product-images/BP_RO_4Stage_QuickTwist.png",
-    "manualPath": "manuals/drinking-water/Platinum_RO_4Stage_QT_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/drinking-water/Platinum_RO_4Stage_QT_Manual.DIGITAL.pdf",
+    "skus": [
+      "BPQCRO-75"
+    ]
   },
   {
     "name": "RO Tankless",
@@ -110,7 +167,10 @@
     "subcategory": "Reverse Osmosis (RO)",
     "imageSku": "BPRO600TAR",
     "imagePath": "product-images/BP_RO_Tankless.png",
-    "manualPath": "manuals/drinking-water/Platinum_RO_Tankless_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/drinking-water/Platinum_RO_Tankless_Manual.DIGITAL.pdf",
+    "skus": [
+      "BPRO600TAR"
+    ]
   },
   {
     "name": "SingleStage 10in Carbon",
@@ -120,7 +180,10 @@
     "subcategory": "Single Stage Filters",
     "imageSku": "BPUSS4000",
     "imagePath": "product-images/BP_SingleStage_10in_CTO.png",
-    "manualPath": "manuals/drinking-water/Platinum_SingleStage_10inch_CTO_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/drinking-water/Platinum_SingleStage_10inch_CTO_Manual.DIGITAL.pdf",
+    "skus": [
+      "BPUSS4000"
+    ]
   },
   {
     "name": "SingleStage 14in Lead",
@@ -130,7 +193,10 @@
     "subcategory": "Single Stage Filters",
     "imageSku": "BPUSS4003",
     "imagePath": "product-images/BP_SingleStage_14in_Lead.png",
-    "manualPath": "manuals/drinking-water/Platinum_SingleStage_14inch_LEAD_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/drinking-water/Platinum_SingleStage_14inch_LEAD_Manual.DIGITAL.pdf",
+    "skus": [
+      "BPUSS4003"
+    ]
   },
   {
     "name": "SingleStage 14in PFAS",
@@ -140,7 +206,10 @@
     "subcategory": "Single Stage Filters",
     "imageSku": "BPUSS4005",
     "imagePath": "product-images/BP_SingleStage_14in_PFAS.png",
-    "manualPath": "manuals/drinking-water/Platinum_SingleStage_14inch_PFAS_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/drinking-water/Platinum_SingleStage_14inch_PFAS_Manual.DIGITAL.pdf",
+    "skus": [
+      "BPUSS4005"
+    ]
   },
   {
     "name": "SingleStage Microbiological",
@@ -149,7 +218,10 @@
     "techPath": "tech-sheets/drinking-water/BP_SingleStage_Microbiological_TechSheet.DIGITAL.pdf",
     "subcategory": "Single Stage Filters",
     "imagePath": "product-images/BP_SingleStage_Microbiological.png",
-    "manualPath": "manuals/drinking-water/Platinum_SingleStage_Microbiological_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/drinking-water/Platinum_SingleStage_Microbiological_Manual.DIGITAL.pdf",
+    "skus": [
+      "BPUSS4004"
+    ]
   },
   {
     "name": "Softener",
@@ -158,7 +230,20 @@
     "techPath": "tech-sheets/whole-house/BP_Softener_TechSheet.DIGITAL.pdf",
     "subcategory": "Water Softeners",
     "imageSku": "BP150J",
-    "imagePath": "product-images/BP_Softener.png"
+    "imagePath": "product-images/BP_Softener.png",
+    "skus": [
+      "BP100J",
+      "BP150J",
+      "BP200",
+      "BP125200",
+      "BP250",
+      "BP125250",
+      "BP300",
+      "BP125300",
+      "BP15-90",
+      "BP300-2",
+      "BP125400"
+    ]
   },
   {
     "name": "Softener Carbon Mid-Plate",
@@ -167,7 +252,12 @@
     "techPath": "tech-sheets/whole-house/BP_Softener_CTO_Mid-Plate_TechSheet.DIGITAL.pdf",
     "subcategory": "Mid-Plates",
     "imageSku": "BPDCS150",
-    "imagePath": "product-images/BP_Softener_CTO_MidPlate.png"
+    "imagePath": "product-images/BP_Softener_CTO_MidPlate.png",
+    "skus": [
+      "BPDCS100",
+      "BPDCS150",
+      "BPDCS200"
+    ]
   },
   {
     "name": "Softener Iron",
@@ -176,7 +266,13 @@
     "techPath": "tech-sheets/whole-house/BP_Softener_Iron_TechSheet.DIGITAL.pdf",
     "subcategory": "Water Softeners",
     "imageSku": "BPFES150",
-    "imagePath": "product-images/BP_Softener_Iron.png"
+    "imagePath": "product-images/BP_Softener_Iron.png",
+    "skus": [
+      "BPFES100J",
+      "BPFES150",
+      "BPFES125150",
+      "BPFES300"
+    ]
   },
   {
     "name": "TitaniumLT 1 Stage GREY",
@@ -185,7 +281,10 @@
     "techPath": "tech-sheets/drinking-water/BP_Titanium LT_1 Stage_TechSheet.DIGITAL.pdf",
     "subcategory": "Titanium LT",
     "imageSku": "BP420H1BKIT",
-    "imagePath": "product-images/BP_TitaniumLT_1_Stage_GREY.png"
+    "imagePath": "product-images/BP_TitaniumLT_1_Stage_GREY.png",
+    "skus": [
+      "BP420H1BKIT"
+    ]
   },
   {
     "name": "TitaniumLT 2 Stage GREY",
@@ -194,7 +293,10 @@
     "techPath": "tech-sheets/drinking-water/BP_Titanium LT_2 Stage_TechSheet.DIGITAL.pdf",
     "subcategory": "Titanium LT",
     "imageSku": "BP420-H-1DUO-B-KIT",
-    "imagePath": "product-images/BP_TitaniumLT_2_Stage_GREY.png"
+    "imagePath": "product-images/BP_TitaniumLT_2_Stage_GREY.png",
+    "skus": [
+      "BP420-H-1DUO-B-KIT"
+    ]
   },
   {
     "name": "TitaniumLT 3 Stage GREY",
@@ -202,7 +304,10 @@
     "path": "sales-sheets/drinking-water/BP_TitaniumLT_3 Stage_GREY.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/drinking-water/BP_Titanium LT_3 Stage_TechSheet.DIGITAL.pdf",
     "subcategory": "Titanium LT",
-    "imagePath": "product-images/BP_TitaniumLT_3_Stage_GREY.png"
+    "imagePath": "product-images/BP_TitaniumLT_3_Stage_GREY.png",
+    "skus": [
+      "BPWHS8000L"
+    ]
   },
   {
     "name": "UV",
@@ -211,7 +316,12 @@
     "techPath": "tech-sheets/drinking-water/BP_UV_TechSheet.DIGITAL.pdf",
     "subcategory": "UV Systems",
     "imageSku": "BPUV016",
-    "imagePath": "product-images/BP_UV.png"
+    "imagePath": "product-images/BP_UV.png",
+    "skus": [
+      "BPUV009",
+      "BPUV016",
+      "BPUV030"
+    ]
   },
   {
     "name": "HYDRA BIG",
