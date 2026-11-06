@@ -3,26 +3,179 @@
 <title>BritaPRO Product Portal</title>
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#17334b;background:#f3f7fb}*{box-sizing:border-box}body{margin:0}header{background:#fff;padding:18px max(20px,calc((100vw - 1120px)/2));border-bottom:1px solid #dbe5ed;display:flex;justify-content:space-between;gap:15px;align-items:center}header a{color:#13668e;text-decoration:none;font-weight:600}main{max-width:1120px;margin:auto;padding:35px 20px 70px}h1{font-size:clamp(28px,4vw,38px);margin:0 0 9px}p{color:#60758a;line-height:1.5}.intro{margin:0 0 27px}.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:25px 0}.choice{border:1px solid #dce5ed;background:white;border-radius:18px;padding:29px;text-align:left;cursor:pointer;box-shadow:0 5px 18px #14283b08;min-height:210px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;color:#17334b}.choice:hover,.choice:focus-visible{outline:2px solid #82b5d6}.category-photo{width:100%;height:115px;object-fit:contain;background:#fff;border-radius:10px;margin-bottom:4px}.home-photo-group{width:100%;height:170px;display:flex;align-items:center;justify-content:center;gap:8px;background:#fff;border-radius:12px;padding:8px}.home-photo-group img{height:100%;min-width:0;max-width:32%;object-fit:contain}.home-photo-group.drinking img{max-width:47%}.home-photo-group img[hidden]{display:none}.choice .symbol{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:#e5f3fa;color:#086aa0;font-size:27px}.choice strong{font-size:23px}.choice small{font-size:14px;color:#62798b}.choice .action{margin-top:auto;color:#0b6da5;font-weight:700}.back{border:0;background:none;color:#096caa;font:inherit;font-weight:700;padding:8px 0;cursor:pointer;margin-bottom:13px}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}input{font:inherit;padding:12px 14px;border:1px solid #c9d7e1;border-radius:9px;width:100%;max-width:520px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:14px}.card{background:#fff;border:1px solid #dce5ed;border-radius:14px;padding:19px;display:flex;flex-direction:column;align-items:flex-start;gap:10px}.product-image{width:100%;height:150px;object-fit:contain;background:white;border:1px solid #e4ebf0;border-radius:10px}.photo-note{font-size:11px;color:#64798a}.placeholder{width:100%;height:150px;border:1px dashed #b8c9d8;border-radius:10px;background:#f4f7fa;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;color:#8293a2;font-size:13px;font-weight:600}.card h3{font-size:17px;line-height:1.35;margin:0 0 6px}.card a{display:block;background:#116da3;color:#fff;text-decoration:none;padding:10px 13px;border-radius:8px;font-size:14px;width:100%;text-align:center}.card a:hover{background:#075a8c}.card a.tech{background:#116da3;color:#fff;border:1px solid #116da3}.card a.tech:hover{background:#075a8c;border-color:#075a8c}.count{font-size:14px;color:#62798b;margin:0 0 15px}#section{display:none}@media(max-width:600px){.choices{grid-template-columns:1fr}.choice{min-height:170px;padding:22px}header{font-size:14px}main{padding:25px 16px}}
- .product-sku{font-size:13px;font-weight:700;letter-spacing:.02em;color:#516a7f;margin:0 0 12px}</style></head><body>
+ .product-sku{font-size:13px;font-weight:700;letter-spacing:.02em;color:#516a7f;margin:0 0 12px}
+.concern-entry{width:100%;min-height:0}
+#concernChoices .choice{min-height:0;padding:18px 22px}
+#concernChoices .choice strong{font-size:18px}
+#concernProducts .grid{margin-bottom:24px}
+#concernProducts .card h3{margin:0 0 6px}
+.concern-checks{max-width:760px;background:#fff;border:1px solid #dce5ed;border-radius:14px;padding:18px 22px}
+.concern-checks dt{font-weight:700}
+.concern-checks dd{margin:4px 0 14px;line-height:1.5}
+.concern-checks dd:last-child{margin-bottom:0}
+</style></head><body>
 <header><strong>BritaPRO · Product Portal</strong><a href="https://britaproportal.netlify.app/">Partner Portal</a></header>
-<main><div id="home"><h1>Product Resources</h1><p class="intro">Select a product category to browse sales sheets and technical specifications. No pricing is displayed.</p>
+<main><div id="home"><h1>Product Resources</h1><p class="intro">Browse by product category, search by SKU, or start with a water concern. No pricing is displayed.</p>
 <div class="controls"><input id="homeSearch" type="search" placeholder="Search all products by name, SKU, or keyword…" aria-label="Search entire product catalog"></div>
 <div class="choices">
 <button class="choice" type="button" data-category="Whole-House"><div class="home-photo-group"><img src="/product-images/BP_TitaniumLT_3_Stage_GREY.png" alt="BritaPRO triple-stage Titanium LT"><img src="/product-images/BP_PlatValve_CatCarbon.png" alt="BritaPRO backwashing filter"><img src="/product-images/BP_Softener.png" alt="BritaPRO softener"></div><strong>Whole-House Systems</strong><small>Water filtration, softeners, specialty treatment, and leak detection.</small><span class="action">Browse Whole-House →</span></button>
 <button class="choice" type="button" data-category="Drinking Water"><div class="home-photo-group drinking"><img src="/product-images/BP_RO_Tankless.png" alt="BritaPRO tankless reverse osmosis"><img src="/product-images/BP_SingleStage_14in_PFAS.png" alt="BritaPRO single-stage drinking water filter"></div><strong>Drinking Water Systems</strong><small>Reverse osmosis and single-stage drinking water filtration.</small><span class="action">Browse Drinking Water →</span></button>
-</div></div>
+</div>
+<button class="choice concern-entry" type="button" id="openConcerns">
+  <strong>Find by Water Concern</strong>
+  <small>Start with what the homeowner notices, confirm the cause, and compare product options.</small>
+  <span class="action">Explore applications →</span>
+</button></div>
+<section id="concerns" hidden>
+  <div id="concernList">
+    <button class="back" type="button" id="concernsHome">← All product categories</button>
+    <h1 id="concernHeading" tabindex="-1">Find by Water Concern</h1>
+    <p class="intro">Choose a concern to see what to confirm and which products to review.</p>
+    <div class="choices" id="concernChoices"></div>
+  </div>
+  <div id="concernDetail" hidden>
+    <button class="back" type="button" id="allConcerns">← All water concerns</button>
+    <h1 id="concernTitle" tabindex="-1"></h1>
+    <dl class="concern-checks">
+      <dt>What you may notice</dt><dd id="concernObservation"></dd>
+      <dt>What to confirm</dt><dd id="concernConfirm"></dd>
+      <dt>How to match the product</dt><dd id="concernMatch"></dd>
+    </dl>
+    <h2>Products to review</h2>
+    <p>Use the product documents to confirm water conditions, flow, and sizing before selecting a model.</p>
+    <div id="concernProducts"></div>
+  </div>
+</section>
 <section id="section"><button class="back" type="button" id="back">← All product categories</button><h1 id="heading"></h1><p>Search products and open the corresponding sales or technical sheet.</p><div id="subcategories" class="choices" style="display:none"></div><button id="subBack" class="back" type="button" style="display:none">← Drinking Water or Whole-House categories</button><div class="controls"><input id="search" type="search" placeholder="Search products" aria-label="Search products"></div><p class="count" id="count"></p><div class="grid" id="grid"></div></section>
 </main><script>
 const $=id=>document.getElementById(id);let records=[],selected='',selectedSub='';const wholeHouseGroups=['Water Softeners','Backwashing Filters','Mid-Plates','Non-Backwashing Filters (NRV)','Specialty Filters','Titanium LT','UV Systems','Other Whole-House Products'];
 const categoryPhotoNames={'Titanium LT':'TitaniumLT 3 Stage GREY','Backwashing Filters':'Platinum Valve Catalytic Carbon','Non-Backwashing Filters (NRV)':'Non-backwashing Catalytic Carbon','Specialty Filters':'Platinum Valve PFAS','Water Softeners':'Softener','Mid-Plates':'Softener Carbon Mid-Plate','UV Systems':'UV','Other Whole-House Products':'Leak Detection','Reverse Osmosis (RO)':'RO Tankless','Single Stage Filters':'SingleStage 14in PFAS'};
 const drinkingWaterGroups=['Reverse Osmosis (RO)','Single Stage Filters'];const names={'Whole-House':'Whole-House Systems','Drinking Water':'Drinking Water Systems'};
-function show(category,recordHistory=true){selected=category;selectedSub='';$('home').style.display=category?'none':'block';$('section').style.display=category?'block':'none';$('search').value='';if(category){$('heading').textContent=names[category]||'All Products';render()}if(recordHistory)history.pushState({category,sub:''},'',category?'#'+(category==='Whole-House'?'whole-house':category==='All'?'all':'drinking-water'):location.pathname)}
+function show(category,recordHistory=true){$('concerns').hidden=true;selected=category;selectedSub='';$('home').style.display=category?'none':'block';$('section').style.display=category?'block':'none';$('search').value='';if(category){$('heading').textContent=names[category]||'All Products';render()}if(recordHistory)history.pushState({category,sub:''},'',category?'#'+(category==='Whole-House'?'whole-house':category==='All'?'all':'drinking-water'):location.pathname)}
 function showSub(group,recordHistory=true){selectedSub=group;$('search').value='';render();if(recordHistory)history.pushState({category:selected,sub:group},'',location.pathname+'#'+(selected==='Whole-House'?'whole-house':'drinking-water')+'/'+encodeURIComponent(group))}
 function render(){const whole=selected==='Whole-House',choose=!!selected&&selected!=='All'&&!selectedSub;const sub=$('subcategories');sub.style.display=choose?'grid':'none';$('subBack').style.display=selectedSub?'block':'none';$('search').parentElement.style.display=choose?'none':'flex';$('heading').textContent=selectedSub||names[selected]||'All Products';if(choose){sub.replaceChildren();for(const group of (whole?wholeHouseGroups:drinkingWaterGroups)){const rows=records.filter(r=>r.category===selected&&r.subcategory===group);if(!rows.length)continue;const b=document.createElement('button');b.className='choice';b.type='button';const representative=records.find(r=>r.category===selected&&r.name===categoryPhotoNames[group])||rows[0];if(representative.imagePath){const img=document.createElement('img');img.className='category-photo';img.alt=group+' BritaPRO product';img.loading='lazy';img.src='/'+representative.imagePath.split('/').map(encodeURIComponent).join('/');img.onerror=()=>img.remove();b.append(img)}const name=document.createElement('strong');name.textContent=group;const count=document.createElement('small');count.textContent=rows.length+' products';const action=document.createElement('span');action.className='action';action.textContent='Browse products →';b.append(name,count,action);b.addEventListener('click',()=>showSub(group));sub.append(b)}$('grid').replaceChildren();$('count').textContent='Choose a product category';return}
-const q=$('search').value.trim().toLowerCase();const rows=records.filter(r=>(selected==='All'||r.category===selected&&r.subcategory===selectedSub)&&(!q||(r.name+' '+r.category+' '+r.subcategory+' '+(r.skus||[r.sku||r.SKU||r.imageSku||'']).join(' ')).toLowerCase().includes(q)));$('count').textContent=rows.length+' products';$('grid').replaceChildren();for(const r of rows){const box=document.createElement('article');box.className='card';const placeholder=document.createElement('div');placeholder.className='placeholder';placeholder.textContent='BritaPRO product photo coming soon';if(r.imagePath||r.imageSku){const img=document.createElement('img');img.className='product-image';img.alt='BritaPRO '+r.name+' product image';img.loading='lazy';const fallback=r.imageSku?'https://britaproorders.netlify.app/'+encodeURIComponent(r.imageSku)+'.webp':'';img.src=r.subcategory==='Backwashing Filters'?'/product-images/BP_PlatValve_CatCarbon.png':(r.subcategory==='Water Softeners'?'/product-images/BP_Softener.png':(r.imagePath?'/'+r.imagePath.split('/').map(encodeURIComponent).join('/'):fallback));img.onerror=()=>{if(fallback&&img.src!==fallback){img.src=fallback}else{img.replaceWith(placeholder)}};box.append(img)}else{box.append(placeholder)}const h=document.createElement('h3');h.textContent=r.name;box.append(h);const skus=r.skus?.length?r.skus:[r.sku||r.SKU||r.imageSku].filter(Boolean);const skuLabel=document.createElement('div');skuLabel.className='product-sku';if(skus.length){skuLabel.textContent=(skus.length===1?'SKU: ':'Available SKUs: ')+skus.join(' · ')}else{skuLabel.textContent='SKU confirmation pending'}box.append(skuLabel);for(const [path,label,css] of [[r.path,'View sales sheet (PDF)',''],[r.brochurePath,'View brochure (PDF)',''],[r.techPath,'View technical sheet (PDF)','tech'],[r.manualPath,'Installation Manual (PDF)','tech']]){if(!path)continue;const link=document.createElement('a');link.href='/'+path.split('/').map(encodeURIComponent).join('/');link.textContent=label;link.className=css;link.target='_blank';link.rel='noopener';box.append(link)}if(r.guidePaths?.length){const section=document.createElement('div');section.style.cssText='font-weight:700;font-size:14px;margin-top:6px';section.textContent='Installation & Startup';box.append(section);for(const guide of r.guidePaths){const link=document.createElement('a');link.href='/'+guide.path.split('/').map(encodeURIComponent).join('/');link.textContent=guide.label+' (PDF)';link.className='tech';link.target='_blank';link.rel='noopener';box.append(link)}}$('grid').append(box)}}
+const q=$('search').value.trim().toLowerCase();const rows=records.filter(r=>(selected==='All'||r.category===selected&&r.subcategory===selectedSub)&&(!q||(r.name+' '+r.category+' '+r.subcategory+' '+(r.skus||[r.sku||r.SKU||r.imageSku||'']).join(' ')).toLowerCase().includes(q)));$('count').textContent=rows.length+' products';renderCards(rows, $('grid'));}
+function renderCards(rows, grid){grid.replaceChildren();for(const r of rows){const box=document.createElement('article');box.className='card';const placeholder=document.createElement('div');placeholder.className='placeholder';placeholder.textContent='BritaPRO product photo coming soon';if(r.imagePath||r.imageSku){const img=document.createElement('img');img.className='product-image';img.alt='BritaPRO '+r.name+' product image';img.loading='lazy';const fallback=r.imageSku?'https://britaproorders.netlify.app/'+encodeURIComponent(r.imageSku)+'.webp':'';img.src=r.subcategory==='Backwashing Filters'?'/product-images/BP_PlatValve_CatCarbon.png':(r.subcategory==='Water Softeners'?'/product-images/BP_Softener.png':(r.imagePath?'/'+r.imagePath.split('/').map(encodeURIComponent).join('/'):fallback));img.onerror=()=>{if(fallback&&img.src!==fallback){img.src=fallback}else{img.replaceWith(placeholder)}};box.append(img)}else{box.append(placeholder)}const h=document.createElement('h3');h.textContent=r.name;box.append(h);const skus=r.skus?.length?r.skus:[r.sku||r.SKU||r.imageSku].filter(Boolean);const skuLabel=document.createElement('div');skuLabel.className='product-sku';if(skus.length){skuLabel.textContent=(skus.length===1?'SKU: ':'Available SKUs: ')+skus.join(' · ')}else{skuLabel.textContent='SKU confirmation pending'}box.append(skuLabel);for(const [path,label,css] of [[r.path,'View sales sheet (PDF)',''],[r.brochurePath,'View brochure (PDF)',''],[r.techPath,'View technical sheet (PDF)','tech'],[r.manualPath,'Installation Manual (PDF)','tech']]){if(!path)continue;const link=document.createElement('a');link.href='/'+path.split('/').map(encodeURIComponent).join('/');link.textContent=label;link.className=css;link.target='_blank';link.rel='noopener';box.append(link)}if(r.guidePaths?.length){const section=document.createElement('div');section.style.cssText='font-weight:700;font-size:14px;margin-top:6px';section.textContent='Installation & Startup';box.append(section);for(const guide of r.guidePaths){const link=document.createElement('a');link.href='/'+guide.path.split('/').map(encodeURIComponent).join('/');link.textContent=guide.label+' (PDF)';link.className='tech';link.target='_blank';link.rel='noopener';box.append(link)}}grid.append(box)}}
 document.querySelectorAll('[data-category]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.category)));$('back').addEventListener('click',()=>show(''));$('subBack').addEventListener('click',()=>showSub(''));$('search').addEventListener('input',render);
 $('homeSearch').addEventListener('input',function(){const q=this.value.trim();if(!q)return;show('All');$('search').value=q;render()});
-function restoreNavigation(){const raw=decodeURIComponent(location.hash.slice(1));const [part,...rest]=raw.split('/');const category=part==='whole-house'?'Whole-House':part==='drinking-water'?'Drinking Water':part==='all'?'All':'';show(category,false);const sub=rest.join('/');if(category&&sub&&((category==='Whole-House'?wholeHouseGroups:drinkingWaterGroups).includes(sub)))showSub(sub,false)}
+function restoreNavigation(){const raw=decodeURIComponent(location.hash.slice(1));const [part,...rest]=raw.split('/');if(part==='water-concerns'){showConcerns(rest[0],false);return}const category=part==='whole-house'?'Whole-House':part==='drinking-water'?'Drinking Water':part==='all'?'All':'';show(category,false);const sub=rest.join('/');if(category&&sub&&((category==='Whole-House'?wholeHouseGroups:drinkingWaterGroups).includes(sub)))showSub(sub,false)}
+const waterConcerns = {
+  hardness: {
+    title: 'Hardness and scale',
+    observation: 'White scale on fixtures or spots on dishes.',
+    confirm: 'Measure hardness in grains per gallon and confirm whether the customer wants softened water throughout the home.',
+    match: 'Start with the standard softener. Consider the Carbon Mid-Plate when testing also confirms a need for carbon filtration and the model matches the disinfectant.',
+    products: ['Softener', 'Softener Carbon Mid-Plate']
+  },
+  disinfectant: {
+    title: 'Chlorine or chloramine taste and odor',
+    observation: 'A pool-like smell or objectionable taste at the tap.',
+    confirm: 'Ask the utility which disinfectant it uses and check the residual with the appropriate test. Ask whether the concern is at the drinking tap or throughout the house.',
+    match: 'Compare drinking-water carbon and whole-house catalytic carbon options. Verify the exact model’s claim for the measured disinfectant, especially for chloramine.',
+    products: ['SingleStage 10in Carbon', 'Non-backwashing Catalytic Carbon', 'Platinum Valve Catalytic Carbon']
+  },
+  sediment: {
+    title: 'Visible sediment',
+    observation: 'Grit or particles collect in aerators or settle in a glass.',
+    confirm: 'Compare cold water at multiple fixtures and check whether particles are coming in with the water supply. Identify the particle type and size before selecting filtration.',
+    match: 'Review backwashing particulate filtration for confirmed incoming sediment and check the required service and backwash flow.',
+    products: ['Platinum Valve Particulate']
+  },
+  iron: {
+    title: 'Iron and orange staining',
+    observation: 'Orange or reddish-brown stains on fixtures or laundry.',
+    confirm: 'Test iron, identify whether it is dissolved or particulate, and check hardness, pH, and manganese before choosing equipment.',
+    match: 'Compare the iron softener when hardness is also present and the water is within its limits. Review aeration when the test results and model requirements support it.',
+    products: ['Softener Iron', 'Platinum Valve Aeration']
+  },
+  sulfur: {
+    title: 'Rotten-egg odor',
+    observation: 'A sulfur smell from one or more faucets.',
+    confirm: 'Compare hot and cold water at multiple taps. If the odor is hot-water-only, investigate the water heater. If it is present in incoming cold water, test for hydrogen sulfide.',
+    match: 'Review the aeration system for confirmed hydrogen sulfide in the incoming water and check its application limits.',
+    products: ['Platinum Valve Aeration']
+  },
+  acidity: {
+    title: 'Low pH and corrosion',
+    observation: 'Blue-green stains or signs of plumbing corrosion.',
+    confirm: 'Measure pH and alkalinity and investigate the plumbing. Use the water test to confirm whether neutralization fits the application.',
+    match: 'Compare non-backwashing and backwashing neutralizers. Check the model’s inlet pH range, flow, and maintenance requirements.',
+    products: ['Non-backwashing Neutralizer', 'Platinum Valve Neutralizer']
+  },
+  pfas: {
+    title: 'PFAS',
+    observation: 'A utility report, lab result, or homeowner concern about PFAS.',
+    confirm: 'Review the utility’s PFAS results or obtain a certified-lab test. Identify the compounds reported and whether treatment is for one tap or the whole house.',
+    match: 'Compare the dedicated drinking-water and whole-house options. Verify the model’s documented reduction claims and certification for the specific compounds.',
+    products: ['SingleStage 14in PFAS', 'Platinum Valve PFAS']
+  },
+  lead: {
+    title: 'Lead in drinking water',
+    observation: 'A lead service line, older plumbing, or a lead test result.',
+    confirm: 'Use a certified lab and follow its sampling instructions for the drinking tap. Ask the water provider about service-line and plumbing sources.',
+    match: 'Review the point-of-use lead filter and verify the exact model’s lead reduction certification.',
+    products: ['SingleStage 14in Lead']
+  },
+  nitrate: {
+    title: 'Nitrate',
+    observation: 'Nitrate appears on a lab result or water report.',
+    confirm: 'Verify the level and reporting units with a certified lab or water provider. Follow local health guidance if the result is elevated.',
+    match: 'Review the dedicated nitrate system and confirm the model’s inlet limits, capacity, and follow-up testing requirements.',
+    products: ['Platinum Valve Nitrate']
+  }
+};
+
+function showConcerns(key = '', recordHistory = true) {
+  const concern = Object.hasOwn(waterConcerns, key) ? waterConcerns[key] : null;
+  show('', false);
+  $('home').style.display = 'none';
+  $('concerns').hidden = false;
+  $('concernList').hidden = Boolean(concern);
+  $('concernDetail').hidden = !concern;
+  if (concern) {
+    $('concernTitle').textContent = concern.title;
+    $('concernObservation').textContent = concern.observation;
+    $('concernConfirm').textContent = concern.confirm;
+    $('concernMatch').textContent = concern.match;
+    $('concernProducts').replaceChildren();
+    for (const [category, label] of Object.entries(names)) {
+      const matches = records.filter(product =>
+        product.category === category && concern.products.includes(product.name)
+      );
+      if (!matches.length) continue;
+      const heading = document.createElement('h3');
+      heading.textContent = label;
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+      $('concernProducts').append(heading, grid);
+      renderCards(matches, grid);
+    }
+  }
+  if (recordHistory) {
+    history.pushState(null, '', concern ? '#water-concerns/' + key : '#water-concerns');
+    (concern ? $('concernTitle') : $('concernHeading')).focus();
+  }
+}
+
+for (const [key, concern] of Object.entries(waterConcerns)) {
+  const button = document.createElement('button');
+  button.className = 'choice';
+  button.type = 'button';
+  const title = document.createElement('strong');
+  title.textContent = concern.title;
+  const description = document.createElement('small');
+  description.textContent = concern.observation;
+  button.append(title, description);
+  button.addEventListener('click', () => showConcerns(key));
+  $('concernChoices').append(button);
+}
+$('openConcerns').addEventListener('click', () => showConcerns());
+$('concernsHome').addEventListener('click', () => {
+  show('');
+  $('openConcerns').focus();
+});
+$('allConcerns').addEventListener('click', () => showConcerns());
+
 window.addEventListener('popstate',restoreNavigation);
 fetch('/sales-sheets/catalog.json').then(r=>{if(!r.ok)throw Error('Unable to load product resources');return r.json()}).then(data=>{records=data;restoreNavigation()}).catch(e=>{document.querySelector('.intro').textContent=e.message});
 </script></body></html>
