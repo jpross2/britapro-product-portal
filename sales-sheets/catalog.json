@@ -66,6 +66,16 @@
       "BPKATAIR021J",
       "BPKATAIR2",
       "BPKATAIR022"
+    ],
+    "guidePaths": [
+      {
+        "label": "Backwashing Filter Installation Guide",
+        "path": "BP_Backwashing_Filter_Installation_Guide.pdf"
+      },
+      {
+        "label": "Backwashing Filter Startup Procedure",
+        "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
+      }
     ]
   },
   {
@@ -85,6 +95,20 @@
       "BP15CAT3",
       "BPCAT300-2",
       "BP15FCAT4"
+    ],
+    "guidePaths": [
+      {
+        "label": "Backwashing Filter Installation Guide",
+        "path": "BP_Backwashing_Filter_Installation_Guide.pdf"
+      },
+      {
+        "label": "Backwashing Filter Startup Procedure",
+        "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
+      },
+      {
+        "label": "Carbon Filtration Soaking Procedure",
+        "path": "BP_Carbon Filtration Soaking Procedure.pdf"
+      }
     ]
   },
   {
@@ -104,6 +128,16 @@
       "BPANSM150",
       "BPANC150",
       "BPANC200"
+    ],
+    "guidePaths": [
+      {
+        "label": "Backwashing Filter Installation Guide",
+        "path": "BP_Backwashing_Filter_Installation_Guide.pdf"
+      },
+      {
+        "label": "Backwashing Filter Startup Procedure",
+        "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
+      }
     ]
   },
   {
@@ -130,6 +164,16 @@
       "BPST100J",
       "BPST150J",
       "BP125ST150J"
+    ],
+    "guidePaths": [
+      {
+        "label": "Backwashing Filter Installation Guide",
+        "path": "BP_Backwashing_Filter_Installation_Guide.pdf"
+      },
+      {
+        "label": "Backwashing Filter Startup Procedure",
+        "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
+      }
     ]
   },
   {
@@ -256,7 +300,13 @@
       "BP300-2",
       "BP125400"
     ],
-    "manualPath": "manuals/whole-house/Platinum_Softener_SoftIron_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_Softener_SoftIron_Manual.DIGITAL.pdf",
+    "guidePaths": [
+      {
+        "label": "Softener & Mid-Plate Startup Procedure",
+        "path": "BP_Softener_MidPlate_Startup_Procedure.pdf"
+      }
+    ]
   },
   {
     "name": "Softener Carbon Mid-Plate",
@@ -271,7 +321,13 @@
       "BPDCS150",
       "BPDCS200"
     ],
-    "manualPath": "manuals/whole-house/Platinum_Softener_CTO_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_Softener_CTO_Manual.DIGITAL.pdf",
+    "guidePaths": [
+      {
+        "label": "Softener & Mid-Plate Startup Procedure",
+        "path": "BP_Softener_MidPlate_Startup_Procedure.pdf"
+      }
+    ]
   },
   {
     "name": "Softener Iron",
@@ -287,7 +343,13 @@
       "BPFES125150",
       "BPFES300"
     ],
-    "manualPath": "manuals/whole-house/Platinum_Softener_SoftIron_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_Softener_SoftIron_Manual.DIGITAL.pdf",
+    "guidePaths": [
+      {
+        "label": "Softener & Mid-Plate Startup Procedure",
+        "path": "BP_Softener_MidPlate_Startup_Procedure.pdf"
+      }
+    ]
   },
   {
     "name": "TitaniumLT 1 Stage GREY",
