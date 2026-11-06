@@ -22,7 +22,8 @@
       "BPNRVAS10J",
       "BPNRVAS15J"
     ],
-    "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/whole-house/BP_Filtration_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Non-backwashing Catalytic Carbon",
@@ -36,7 +37,8 @@
       "BPNRVCAT100J",
       "BPNRVCAT150J"
     ],
-    "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/whole-house/BP_Filtration_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Non-backwashing Neutralizer",
@@ -52,7 +54,8 @@
       "BPNRVANSM100",
       "BPNRVANSM150"
     ],
-    "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/whole-house/BP_Filtration_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve Catalytic Carbon",
@@ -86,7 +89,8 @@
         "path": "BP_Carbon Filtration Soaking Procedure.pdf"
       }
     ],
-    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/whole-house/BP_Filtration_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve Aeration",
@@ -111,7 +115,8 @@
         "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
       }
     ],
-    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/whole-house/BP_Filtration_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve Neutralizer",
@@ -141,7 +146,8 @@
         "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
       }
     ],
-    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/whole-house/BP_Filtration_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve Nitrate",
@@ -154,7 +160,8 @@
       "BP150NJ",
       "BP200N"
     ],
-    "manualPath": "manuals/whole-house/Platinum_NITRATE_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_NITRATE_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/whole-house/BP_Filtration_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve Particulate",
@@ -178,7 +185,8 @@
         "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
       }
     ],
-    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/whole-house/BP_Filtration_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve PFAS",
@@ -191,7 +199,8 @@
     "skus": [
       "BP150PFAJ"
     ],
-    "manualPath": "manuals/whole-house/Platinum_PFAS_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_PFAS_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/whole-house/BP_Filtration_Brochure.DIGITAL.pdf"
   },
   {
     "name": "RO Tankless",
@@ -204,7 +213,8 @@
     "manualPath": "manuals/drinking-water/Platinum_RO_Tankless_Manual.DIGITAL.pdf",
     "skus": [
       "BPRO600TAR"
-    ]
+    ],
+    "brochurePath": "sales-sheets/drinking-water/BP_ReverseOsmosis_Brochure.DIGITAL.pdf"
   },
   {
     "name": "RO 4Stage QuickTwist",
@@ -217,7 +227,8 @@
     "manualPath": "manuals/drinking-water/Platinum_RO_4Stage_QT_Manual.DIGITAL.pdf",
     "skus": [
       "BPQCRO-75"
-    ]
+    ],
+    "brochurePath": "sales-sheets/drinking-water/BP_ReverseOsmosis_Brochure.DIGITAL.pdf"
   },
   {
     "name": "SingleStage 10in Carbon",
@@ -230,7 +241,8 @@
     "manualPath": "manuals/drinking-water/Platinum_SingleStage_10inch_CTO_Manual.DIGITAL.pdf",
     "skus": [
       "BPUSS4000"
-    ]
+    ],
+    "brochurePath": "sales-sheets/drinking-water/BP_SingleStage_Brochure.DIGITAL.pdf"
   },
   {
     "name": "SingleStage 14in Lead",
@@ -243,7 +255,8 @@
     "manualPath": "manuals/drinking-water/Platinum_SingleStage_14inch_LEAD_Manual.DIGITAL.pdf",
     "skus": [
       "BPUSS4003"
-    ]
+    ],
+    "brochurePath": "sales-sheets/drinking-water/BP_SingleStage_Brochure.DIGITAL.pdf"
   },
   {
     "name": "SingleStage 14in PFAS",
@@ -256,7 +269,8 @@
     "manualPath": "manuals/drinking-water/Platinum_SingleStage_14inch_PFAS_Manual.DIGITAL.pdf",
     "skus": [
       "BPUSS4004"
-    ]
+    ],
+    "brochurePath": "sales-sheets/drinking-water/BP_SingleStage_Brochure.DIGITAL.pdf"
   },
   {
     "name": "SingleStage Microbiological",
@@ -269,7 +283,8 @@
     "skus": [
       "BPUSS4005"
     ],
-    "imageSku": "BPUSS4005"
+    "imageSku": "BPUSS4005",
+    "brochurePath": "sales-sheets/drinking-water/BP_SingleStage_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Softener",
@@ -298,7 +313,8 @@
         "label": "Softener & Mid-Plate Startup Procedure",
         "path": "BP_Softener_MidPlate_Startup_Procedure.pdf"
       }
-    ]
+    ],
+    "brochurePath": "sales-sheets/whole-house/BP_Softener_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Softener Carbon Mid-Plate",
@@ -319,7 +335,8 @@
         "label": "Softener & Mid-Plate Startup Procedure",
         "path": "BP_Softener_MidPlate_Startup_Procedure.pdf"
       }
-    ]
+    ],
+    "brochurePath": "sales-sheets/whole-house/BP_Softener_Brochure.DIGITAL.pdf"
   },
   {
     "name": "Softener Iron",
@@ -341,7 +358,8 @@
         "label": "Softener & Mid-Plate Startup Procedure",
         "path": "BP_Softener_MidPlate_Startup_Procedure.pdf"
       }
-    ]
+    ],
+    "brochurePath": "sales-sheets/whole-house/BP_Softener_Brochure.DIGITAL.pdf"
   },
   {
     "name": "TitaniumLT 1 Stage GREY",
@@ -354,7 +372,8 @@
     "skus": [
       "BP420H1BKIT"
     ],
-    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/drinking-water/BP_Titanium LT_Brochure.DIGITAL.pdf"
   },
   {
     "name": "TitaniumLT 2 Stage GREY",
@@ -367,7 +386,8 @@
     "skus": [
       "BP420-H-1DUO-B-KIT"
     ],
-    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/drinking-water/BP_Titanium LT_Brochure.DIGITAL.pdf"
   },
   {
     "name": "TitaniumLT 3 Stage GREY",
@@ -379,7 +399,8 @@
     "skus": [
       "BPWHS8000L"
     ],
-    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf"
+    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/drinking-water/BP_Titanium LT_Brochure.DIGITAL.pdf"
   },
   {
     "name": "UV",
