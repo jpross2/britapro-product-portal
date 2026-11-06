@@ -55,30 +55,6 @@
     "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf"
   },
   {
-    "name": "Platinum Valve Aeration",
-    "category": "Whole-House",
-    "path": "sales-sheets/whole-house/BP_PlatValve_Aeration.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/whole-house/BP_PlatValve_Aeration_TechSheet.DIGITAL.pdf",
-    "subcategory": "Backwashing Filters",
-    "imagePath": "product-images/BP_PlatValve_Aeration.png",
-    "skus": [
-      "BPKATAIR1J",
-      "BPKATAIR021J",
-      "BPKATAIR2",
-      "BPKATAIR022"
-    ],
-    "guidePaths": [
-      {
-        "label": "Backwashing Filter Installation Guide",
-        "path": "BP_Backwashing_Filter_Installation_Guide.pdf"
-      },
-      {
-        "label": "Backwashing Filter Startup Procedure",
-        "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
-      }
-    ]
-  },
-  {
     "name": "Platinum Valve Catalytic Carbon",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_PlatValve_CatCarbon.SalesSheet.DIGITAL.pdf",
@@ -108,6 +84,30 @@
       {
         "label": "Carbon Filtration Soaking Procedure",
         "path": "BP_Carbon Filtration Soaking Procedure.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Platinum Valve Aeration",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_PlatValve_Aeration.SalesSheet.DIGITAL.pdf",
+    "techPath": "tech-sheets/whole-house/BP_PlatValve_Aeration_TechSheet.DIGITAL.pdf",
+    "subcategory": "Backwashing Filters",
+    "imagePath": "product-images/BP_PlatValve_Aeration.png",
+    "skus": [
+      "BPKATAIR1J",
+      "BPKATAIR021J",
+      "BPKATAIR2",
+      "BPKATAIR022"
+    ],
+    "guidePaths": [
+      {
+        "label": "Backwashing Filter Installation Guide",
+        "path": "BP_Backwashing_Filter_Installation_Guide.pdf"
+      },
+      {
+        "label": "Backwashing Filter Startup Procedure",
+        "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
       }
     ]
   },
