@@ -310,6 +310,10 @@
     "manualPath": "manuals/whole-house/Platinum_Softener_SoftIron_Manual.DIGITAL.pdf",
     "guidePaths": [
       {
+        "label": "Softener & Mid-Plate Installation Guide",
+        "path": "BP_Softener_MidPlate_Installation_Guide.pdf"
+      },
+      {
         "label": "Softener & Mid-Plate Startup Procedure",
         "path": "BP_Softener_MidPlate_Startup_Procedure.pdf"
       }
@@ -331,6 +335,10 @@
     ],
     "manualPath": "manuals/whole-house/Platinum_Softener_CTO_Manual.DIGITAL.pdf",
     "guidePaths": [
+      {
+        "label": "Softener & Mid-Plate Installation Guide",
+        "path": "BP_Softener_MidPlate_Installation_Guide.pdf"
+      },
       {
         "label": "Softener & Mid-Plate Startup Procedure",
         "path": "BP_Softener_MidPlate_Startup_Procedure.pdf"
@@ -354,6 +362,10 @@
     ],
     "manualPath": "manuals/whole-house/Platinum_Softener_SoftIron_Manual.DIGITAL.pdf",
     "guidePaths": [
+      {
+        "label": "Softener & Mid-Plate Installation Guide",
+        "path": "BP_Softener_MidPlate_Installation_Guide.pdf"
+      },
       {
         "label": "Softener & Mid-Plate Startup Procedure",
         "path": "BP_Softener_MidPlate_Startup_Procedure.pdf"
