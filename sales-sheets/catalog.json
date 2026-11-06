@@ -21,7 +21,8 @@
     "skus": [
       "BPNRVAS10J",
       "BPNRVAS15J"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf"
   },
   {
     "name": "Non-backwashing Catalytic Carbon",
@@ -34,7 +35,8 @@
     "skus": [
       "BPNRVCAT100J",
       "BPNRVCAT150J"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf"
   },
   {
     "name": "Non-backwashing Neutralizer",
@@ -49,7 +51,8 @@
       "BPNRVAN150",
       "BPNRVANSM100",
       "BPNRVANSM150"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve Aeration",
@@ -113,7 +116,8 @@
     "skus": [
       "BP150NJ",
       "BP200N"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_NITRATE_Manual.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve Particulate",
@@ -138,7 +142,8 @@
     "imagePath": "product-images/BP_PlatValve_PFAS.png",
     "skus": [
       "BP150PFAJ"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_PFAS_Manual.DIGITAL.pdf"
   },
   {
     "name": "RO 3Stage Standard",
@@ -250,7 +255,8 @@
       "BP15-90",
       "BP300-2",
       "BP125400"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_Softener_SoftIron_Manual.DIGITAL.pdf"
   },
   {
     "name": "Softener Carbon Mid-Plate",
@@ -264,7 +270,8 @@
       "BPDCS100",
       "BPDCS150",
       "BPDCS200"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_Softener_CTO_Manual.DIGITAL.pdf"
   },
   {
     "name": "Softener Iron",
@@ -279,7 +286,8 @@
       "BPFES150",
       "BPFES125150",
       "BPFES300"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_Softener_SoftIron_Manual.DIGITAL.pdf"
   },
   {
     "name": "TitaniumLT 1 Stage GREY",
@@ -291,7 +299,8 @@
     "imagePath": "product-images/BP_TitaniumLT_1_Stage_GREY.png",
     "skus": [
       "BP420H1BKIT"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf"
   },
   {
     "name": "TitaniumLT 2 Stage GREY",
@@ -303,7 +312,8 @@
     "imagePath": "product-images/BP_TitaniumLT_2_Stage_GREY.png",
     "skus": [
       "BP420-H-1DUO-B-KIT"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf"
   },
   {
     "name": "TitaniumLT 3 Stage GREY",
@@ -314,7 +324,8 @@
     "imagePath": "product-images/BP_TitaniumLT_3_Stage_GREY.png",
     "skus": [
       "BPWHS8000L"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf"
   },
   {
     "name": "UV",
@@ -328,7 +339,8 @@
       "BPUV009",
       "BPUV016",
       "BPUV030"
-    ]
+    ],
+    "manualPath": "manuals/whole-house/Platinum_Ultraviolet_Manual.DIGITAL.pdf"
   },
   {
     "name": "HYDRA BIG",
