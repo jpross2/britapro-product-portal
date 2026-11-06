@@ -85,7 +85,8 @@
         "label": "Carbon Filtration Soaking Procedure",
         "path": "BP_Carbon Filtration Soaking Procedure.pdf"
       }
-    ]
+    ],
+    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve Aeration",
@@ -109,7 +110,8 @@
         "label": "Backwashing Filter Startup Procedure",
         "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
       }
-    ]
+    ],
+    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve Neutralizer",
@@ -138,7 +140,8 @@
         "label": "Backwashing Filter Startup Procedure",
         "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
       }
-    ]
+    ],
+    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve Nitrate",
@@ -174,7 +177,8 @@
         "label": "Backwashing Filter Startup Procedure",
         "path": "BP_Backwashing_Filter_Startup_Procedure.pdf"
       }
-    ]
+    ],
+    "manualPath": "manuals/Platinum_Filter_Manual.DIGITAL.pdf"
   },
   {
     "name": "Platinum Valve PFAS",
