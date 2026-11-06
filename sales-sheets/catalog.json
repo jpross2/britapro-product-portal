@@ -216,18 +216,6 @@
     ]
   },
   {
-    "name": "RO 3Stage Standard",
-    "category": "Drinking Water",
-    "path": "sales-sheets/drinking-water/BP_RO_3Stage_Standard.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_Standard_TechSheet.DIGITAL.pdf",
-    "subcategory": "Reverse Osmosis (RO)",
-    "imagePath": "product-images/BP_RO_3Stage_Standard.png",
-    "manualPath": "manuals/drinking-water/Platinum_RO_3Stage_Standard_Manual.DIGITAL.pdf",
-    "skus": [
-      "BPLRO35"
-    ]
-  },
-  {
     "name": "SingleStage 10in Carbon",
     "category": "Drinking Water",
     "path": "sales-sheets/drinking-water/BP_SingleStage_10in_CTO.SalesSheet.DIGITAL.pdf",
@@ -417,15 +405,5 @@
     "techPath": "tech-sheets/whole-house/BP_HYDRA_Standard_TechSheet.DIGITAL.pdf",
     "subcategory": "Other Whole-House Products",
     "imagePath": "product-images/BP_HYDRA_Standard_TechSheet.DIGITAL.png"
-  },
-  {
-    "name": "RO 3-Stage QuickTwist",
-    "category": "Drinking Water",
-    "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.pdf",
-    "subcategory": "Reverse Osmosis (RO)",
-    "imagePath": "product-images/BP_RO_3-Stage_QuickTwist_TechSheet.DIGITAL.png",
-    "skus": [
-      "BPQC50"
-    ]
   }
 ]
