@@ -190,15 +190,16 @@
     "manualPath": "manuals/whole-house/Platinum_PFAS_Manual.DIGITAL.pdf"
   },
   {
-    "name": "RO 3Stage Standard",
+    "name": "RO Tankless",
     "category": "Drinking Water",
-    "path": "sales-sheets/drinking-water/BP_RO_3Stage_Standard.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_Standard_TechSheet.DIGITAL.pdf",
+    "path": "sales-sheets/drinking-water/BP_RO_Tankless.SalesSheet.DIGITAL.pdf",
+    "techPath": "tech-sheets/drinking-water/BP_RO_Tankless_TechSheet.DIGITAL.pdf",
     "subcategory": "Reverse Osmosis (RO)",
-    "imagePath": "product-images/BP_RO_3Stage_Standard.png",
-    "manualPath": "manuals/drinking-water/Platinum_RO_3Stage_Standard_Manual.DIGITAL.pdf",
+    "imageSku": "BPRO600TAR",
+    "imagePath": "product-images/BP_RO_Tankless.png",
+    "manualPath": "manuals/drinking-water/Platinum_RO_Tankless_Manual.DIGITAL.pdf",
     "skus": [
-      "BPLRO35"
+      "BPRO600TAR"
     ]
   },
   {
@@ -215,16 +216,15 @@
     ]
   },
   {
-    "name": "RO Tankless",
+    "name": "RO 3Stage Standard",
     "category": "Drinking Water",
-    "path": "sales-sheets/drinking-water/BP_RO_Tankless.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_RO_Tankless_TechSheet.DIGITAL.pdf",
+    "path": "sales-sheets/drinking-water/BP_RO_3Stage_Standard.SalesSheet.DIGITAL.pdf",
+    "techPath": "tech-sheets/drinking-water/BP_RO_3-Stage_Standard_TechSheet.DIGITAL.pdf",
     "subcategory": "Reverse Osmosis (RO)",
-    "imageSku": "BPRO600TAR",
-    "imagePath": "product-images/BP_RO_Tankless.png",
-    "manualPath": "manuals/drinking-water/Platinum_RO_Tankless_Manual.DIGITAL.pdf",
+    "imagePath": "product-images/BP_RO_3Stage_Standard.png",
+    "manualPath": "manuals/drinking-water/Platinum_RO_3Stage_Standard_Manual.DIGITAL.pdf",
     "skus": [
-      "BPRO600TAR"
+      "BPLRO35"
     ]
   },
   {
