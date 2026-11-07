@@ -16,8 +16,8 @@
     "path": "sales-sheets/whole-house/BP_NRV_Anti-scale.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_NRV Anti-scale_TechSheet.DIGITAL.pdf",
     "subcategory": "Non-Backwashing Filters (NRV)",
-    "imageSku": "BPNRVAS10J",
-    "imagePath": "product-images/BP_NRV_Anti-scale.png",
+    "imageSku": "BPNRVCAT150J",
+    "imagePath": "product-images/BP_NRV_CatCarbon.png",
     "skus": [
       "BPNRVAS10J",
       "BPNRVAS15J"
@@ -46,8 +46,8 @@
     "path": "sales-sheets/whole-house/BP_NRV_Neutralizer.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_NRV Neutralizer_TechSheet.DIGITAL.pdf",
     "subcategory": "Non-Backwashing Filters (NRV)",
-    "imageSku": "BPNRVAN150",
-    "imagePath": "product-images/BP_NRV_Neutralizer.png",
+    "imageSku": "BPNRVCAT150J",
+    "imagePath": "product-images/BP_NRV_CatCarbon.png",
     "skus": [
       "BPNRVAN100",
       "BPNRVAN150",
