@@ -154,7 +154,7 @@
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_PlatValve_Nitrate.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Nitrate_TechSheet.DIGITAL.pdf",
-    "subcategory": "Specialty Filters",
+    "subcategory": "Backwashing Filters",
     "imagePath": "product-images/BP_PlatValve_Nitrate.png",
     "skus": [
       "BP150NJ",
@@ -193,7 +193,7 @@
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_PlatValve_PFAS.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_PFAS_TechSheet.DIGITAL.pdf",
-    "subcategory": "Specialty Filters",
+    "subcategory": "Backwashing Filters",
     "imageSku": "BP150PFAJ",
     "imagePath": "product-images/BP_PlatValve_PFAS.png",
     "skus": [
