@@ -155,7 +155,7 @@
     "path": "sales-sheets/whole-house/BP_PlatValve_Nitrate.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/whole-house/BP_PlatValve_Nitrate_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
-    "imagePath": "product-images/BP_PlatValve_Nitrate.png",
+    "imagePath": "product-images/BP_Softener.png",
     "skus": [
       "BP150NJ",
       "BP200N"
@@ -195,7 +195,7 @@
     "techPath": "tech-sheets/whole-house/BP_PlatValve_PFAS_TechSheet.DIGITAL.pdf",
     "subcategory": "Backwashing Filters",
     "imageSku": "BP150PFAJ",
-    "imagePath": "product-images/BP_PlatValve_PFAS.png",
+    "imagePath": "product-images/BP_Softener.png",
     "skus": [
       "BP150PFAJ"
     ],
