@@ -35,7 +35,7 @@ body::after{content:"DEVELOPMENT PREVIEW — NOT FOR DISTRIBUTION";position:fixe
   <div id="concernList">
     <button class="back" type="button" id="concernsHome">← All product categories</button>
     <h1 id="concernHeading" tabindex="-1">Find by Water Concern</h1>
-    <p class="intro">Choose a concern to see what to confirm and which products to review.</p>
+    <p class="intro">Select a water concern to review testing guidance and matching BritaPRO products. Products shown are candidates, not automatic recommendations.</p>
     <div class="choices" id="concernChoices"></div>
   </div>
   <div id="concernDetail" hidden>
@@ -46,8 +46,8 @@ body::after{content:"DEVELOPMENT PREVIEW — NOT FOR DISTRIBUTION";position:fixe
       <dt>What to confirm</dt><dd id="concernConfirm"></dd>
       <dt>How to match the product</dt><dd id="concernMatch"></dd>
     </dl>
-    <h2>Products to review</h2>
-    <p>Use the product documents to confirm water conditions, flow, and sizing before selecting a model.</p>
+    <h2>Matching product options</h2>
+    <p>These are products to evaluate, not confirmed treatment recommendations. Verify each model’s claims, certifications, water conditions, flow, and sizing before selection.</p>
     <div id="concernProducts"></div>
   </div>
 </section>
@@ -93,64 +93,57 @@ const waterConcerns = {
     title: 'Drinking Water',
     observation: 'The homeowner wants improved drinking water quality, purified drinking water, or has a specific drinking-water concern.',
     confirm: 'Measure total dissolved solids (TDS) at the drinking tap. For a specific contaminant concern, review the utility report or obtain a certified-lab test for that contaminant.',
-    match: 'Compare the 4-Stage Quick Twist and Tankless reverse osmosis systems. Check the exact model’s documented reduction claims, inlet-water requirements, and under-sink space, drain, and power needs.',
-    products: ['RO 4Stage QuickTwist', 'RO Tankless']
+    match: 'Review all drinking-water options, including reverse osmosis and single-stage filters. Select by the specific contaminant, documented reduction claims, flow, and installation requirements.',
+    products: ['RO 4Stage QuickTwist', 'RO Tankless', 'SingleStage 10in Carbon', 'SingleStage 14in Lead', 'SingleStage 14in PFAS', 'SingleStage Microbiological']
   },
   hardness: {
     title: 'Hardness and scale',
     observation: 'White scale on fixtures or spots on dishes.',
     confirm: 'Measure hardness in grains per gallon and confirm whether the customer wants softened water throughout the home.',
-    match: 'Start with the standard softener. Consider the Carbon Mid-Plate when testing also confirms a need for carbon filtration and the model matches the disinfectant.',
-    products: ['Softener', 'Softener Carbon Mid-Plate']
+    match: 'Start with the standard softener for hardness removal. The Carbon Mid-Plate can address multiple concerns where supported; NRV anti-scale is a scale-prevention alternative, not a softener.',
+    products: ['Softener', 'Softener Carbon Mid-Plate', 'Non-backwashing Anti-scale']
   },
   disinfectant: {
     title: 'Chlorine / Chloramine',
     observation: 'A pool-like smell or objectionable taste at the tap.',
     confirm: 'Ask the utility which disinfectant it uses and check the residual with the appropriate test. Ask whether the concern is at the drinking tap or throughout the house.',
     match: 'Compare drinking-water carbon and whole-house catalytic carbon options. Verify the exact model’s claim for the measured disinfectant, especially for chloramine.',
-    products: ['SingleStage 10in Carbon', 'Non-backwashing Catalytic Carbon', 'Platinum Valve Catalytic Carbon']
+    products: ['SingleStage 10in Carbon', 'Non-backwashing Catalytic Carbon', 'Platinum Valve Catalytic Carbon', 'Softener Carbon Mid-Plate']
   },
   pfas: {
     title: 'PFAS',
     observation: 'A utility report, lab result, or homeowner concern about PFAS.',
     confirm: 'Review the utility’s PFAS results or obtain a certified-lab test. Identify the compounds reported and whether treatment is for one tap or the whole house.',
     match: 'Compare the dedicated drinking-water and whole-house options. Verify the model’s documented reduction claims and certification for the specific compounds.',
-    products: ['SingleStage 14in PFAS', 'Platinum Valve PFAS']
+    products: ['SingleStage 14in PFAS', 'Platinum Valve PFAS', 'RO 4Stage QuickTwist', 'RO Tankless']
   },
   nitrate: {
     title: 'Nitrates',
     observation: 'Nitrate appears on a lab result or water report.',
     confirm: 'Verify the level and reporting units with a certified lab or water provider. Follow local health guidance if the result is elevated.',
-    match: 'Review the dedicated nitrate system and confirm the model’s inlet limits, capacity, and follow-up testing requirements.',
-    products: ['Platinum Valve Nitrate']
+    match: 'Review the dedicated nitrate system and RO as a potential drinking-water alternative. Confirm each model’s nitrate reduction claim, inlet limits, capacity, and follow-up testing requirements.',
+    products: ['Platinum Valve Nitrate', 'RO 4Stage QuickTwist', 'RO Tankless']
   },
   lead: {
     title: 'Lead',
     observation: 'A lead service line, older plumbing, or a lead test result.',
     confirm: 'Use a certified lab and follow its sampling instructions for the drinking tap. Ask the water provider about service-line and plumbing sources.',
-    match: 'Review the point-of-use lead filter and verify the exact model’s lead reduction certification.',
-    products: ['SingleStage 14in Lead']
+    match: 'Review the dedicated point-of-use lead filter and RO systems as possible alternatives. Verify each model’s documented lead reduction claims.',
+    products: ['SingleStage 14in Lead', 'RO 4Stage QuickTwist', 'RO Tankless']
   },
   microbiological: {
     title: 'Microbiological',
     observation: 'A positive bacteria test, boil-water notice, or concern about microorganisms.',
     confirm: 'Identify the organisms or advisory and obtain appropriate laboratory testing. Investigate and correct source contamination; follow public-health instructions.',
-    match: 'Review only BritaPRO systems with documented microbiological reduction claims for the organisms of concern. Confirm any required CTO prefilter. No product is automatically recommended without verification.',
-    products: []
-  },
-  taste: {
-    title: 'Taste',
-    observation: 'Unpleasant or unusual taste in drinking water.',
-    confirm: 'Identify whether the cause is chlorine, chloramine, dissolved minerals, plumbing, or another contaminant; test accordingly.',
-    match: 'Review drinking-water carbon filtration for verified taste and odor applications, or reverse osmosis where dissolved contaminants warrant it. Confirm specific model claims.',
-    products: ['SingleStage 10in Carbon', 'RO 4Stage QuickTwist', 'RO Tankless']
+    match: 'Review the microbiological single-stage filter and UV systems as candidates only. Confirm organism-specific claims, UV dose/flow, pretreatment and any required CTO prefilter before recommending.',
+    products: ['SingleStage Microbiological', 'UV']
   },
   sediment: {
     title: 'Visible sediment',
     observation: 'Grit or particles collect in aerators or settle in a glass.',
     confirm: 'Compare cold water at multiple fixtures and check whether particles are coming in with the water supply. Identify the particle type and size before selecting filtration.',
-    match: 'Review backwashing particulate filtration for confirmed incoming sediment and check the required service and backwash flow.',
-    products: ['Platinum Valve Particulate']
+    match: 'Review particulate backwashing, Titanium LT sediment configurations, and HYDRA prefilters. Match particle size, filtration media, flow, and maintenance needs; Titanium LT housings require the correct cartridges.',
+    products: ['Platinum Valve Particulate', 'TitaniumLT 1 Stage GREY', 'TitaniumLT 2 Stage GREY', 'TitaniumLT 3 Stage GREY', 'HYDRA BIG', 'HYDRA Standard']
   },
   iron: {
     title: 'Iron and orange staining',
