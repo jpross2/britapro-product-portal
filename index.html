@@ -78,15 +78,17 @@ function showType(type,recordHistory=true){selectedType=type;$('search').value='
 const verifiedPartSections={
  'Titanium LT':['BPWHF8001','BPWHF8002','BPWHF8003','BPWHF8004','BPWHF8005','BPWHF8006'],
  'Single Stage Filters':['BPUSF4001','BPUSF4002','BPUSF4003','BPUSF4004','BPUSF4005','BPUSF4006','BPUSF4001CA','BPUSF4002CA','BPUSF4003CA','BPUSF4004CA','BPUSF4005CA','BPUSF4006CA'],
+ 'Reverse Osmosis (RO)':['BP5WRX.259.120','BP5WRX.259.119'],
  'Other Whole-House Products':['BPF104F']
 };
 function renderSectionParts(){
  let old=document.getElementById('sectionParts');if(old)old.remove();
  if(!selectedSub||selected==='All')return;
- const skus=verifiedPartSections[selectedSub]||[];if(!skus.length)return;
+ const skus=verifiedPartSections[selectedSub]||[];
  const details=document.createElement('details');details.id='sectionParts';details.style.cssText='border:1px solid #d3e1eb;background:white;border-radius:14px;padding:16px;margin-top:22px';
  const summary=document.createElement('summary');summary.textContent='Parts & Accessories ('+skus.length+')';summary.style.cssText='cursor:pointer;font-weight:800;color:#075b96';details.append(summary);
  const intro=document.createElement('p');intro.textContent='Compatible replacement parts. Select a SKU to view ordering details after signing in.';details.append(intro);
+ if(!skus.length){const note=document.createElement('p');note.textContent='No compatible parts have been verified for this section yet.';details.append(note)}
  for(const sku of skus){const link=document.createElement('a');link.href='https://britapro-order-portal.netlify.app/?sku='+encodeURIComponent(sku);link.textContent=sku;link.style.cssText='display:inline-block;margin:6px;padding:9px 13px;border:1px solid #d3e1eb;border-radius:8px;color:#075b96';details.append(link)}
  $('grid').insertAdjacentElement('afterend',details);
 }
