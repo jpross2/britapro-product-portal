@@ -86,7 +86,7 @@ function renderSectionParts(){
  if(!selectedSub||selected==='All')return;
  const skus=verifiedPartSections[selectedSub]||[];
  const details=document.createElement('details');details.id='sectionParts';details.style.cssText='border:1px solid #d3e1eb;background:white;border-radius:14px;padding:16px;margin-top:22px';
- const summary=document.createElement('summary');summary.textContent='Parts & Accessories ('+skus.length+')';summary.style.cssText='cursor:pointer;font-weight:800;color:#075b96';details.append(summary);
+ const summary=document.createElement('summary');summary.textContent='Filters, Parts, and Accessories ('+skus.length+')';summary.style.cssText='cursor:pointer;font-weight:800;color:#075b96';details.append(summary);
  const intro=document.createElement('p');intro.textContent='Compatible replacement parts. Select a SKU to view ordering details after signing in.';details.append(intro);
  if(!skus.length){const note=document.createElement('p');note.textContent='No compatible parts have been verified for this section yet.';details.append(note)}
  for(const sku of skus){const link=document.createElement('a');link.href='https://britapro-order-portal.netlify.app/?sku='+encodeURIComponent(sku);link.textContent=sku;link.style.cssText='display:inline-block;margin:6px;padding:9px 13px;border:1px solid #d3e1eb;border-radius:8px;color:#075b96';details.append(link)}
