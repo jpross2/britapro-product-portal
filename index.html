@@ -92,7 +92,7 @@ function renderSectionParts(){
  if(skus.length){
   const note=document.createElement('p');note.textContent=['Titanium LT','Reverse Osmosis (RO)','Single Stage Filters'].includes(selectedSub)?'Confirmed replacement filters'+(selectedSub==='Single Stage Filters'?' — CA suffix denotes a case of 12':''):'Proposed compatibility — please verify before approval';note.style.cssText='font-weight:700;color:#8a5b11';details.append(note);
   const grid=document.createElement('div');grid.className='grid';grid.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:16px';
-  const partRecords=skus.map(sku=>records.find(r=>(r.skus||[r.sku||r.SKU||r.imageSku]).includes(sku))||{name:partNames[sku]||(sku.startsWith('BPUSF')?'Single Stage Replacement Filter'+(sku.endsWith('CA')?' — Case of 12':''):sku.startsWith('BPWHF')?'Titanium LT Replacement Filter':sku.endsWith('.120')?'Tankless RO Replacement Membrane':'Tankless RO Replacement Filter',sku,imageSku:sku,subcategory:selectedSub,category:selected});
+  const partRecords=skus.map(sku=>records.find(r=>(r.skus||[r.sku||r.SKU||r.imageSku]).includes(sku))||{name:partNames[sku]||(sku.startsWith('BPUSF')?'Single Stage Replacement Filter'+(sku.endsWith('CA')?' — Case of 12':''):sku.startsWith('BPWHF')?'Titanium LT Replacement Filter':sku.endsWith('.120')?'Tankless RO Replacement Membrane':'Tankless RO Replacement Filter'),sku,imageSku:sku,subcategory:selectedSub,category:selected});
   renderCards(partRecords,grid);details.append(grid);
  }else{const note=document.createElement('p');note.textContent='No confirmed filters, parts, or accessories assigned yet.';details.append(note)}
  $('search').closest('.controls').insertAdjacentElement('afterend',details);
