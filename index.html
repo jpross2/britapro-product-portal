@@ -90,7 +90,7 @@ function renderSectionParts(){
   const partRecords=skus.map(sku=>records.find(r=>(r.skus||[r.sku||r.SKU||r.imageSku]).includes(sku))||{name:sku.startsWith('BPWHF')?'Titanium LT Replacement Filter':sku.endsWith('.120')?'Tankless RO Replacement Membrane':'Tankless RO Replacement Filter',sku,imageSku:sku,subcategory:selectedSub,category:selected});
   renderCards(partRecords,grid);details.append(grid);
  }else{const note=document.createElement('p');note.textContent='No confirmed filters, parts, or accessories assigned yet.';details.append(note)}
- $('grid').insertAdjacentElement('afterend',details);
+ $('search').closest('.controls').insertAdjacentElement('afterend',details);
 }
 function render(){
  const oldParts=document.getElementById('sectionParts');if(oldParts)oldParts.remove();
