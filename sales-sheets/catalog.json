@@ -445,5 +445,101 @@
     "techPath": "tech-sheets/whole-house/BP_HYDRA_Standard_TechSheet.DIGITAL.pdf",
     "subcategory": "Other Whole-House Products",
     "imagePath": "product-images/BP_HYDRA_Standard_TechSheet.DIGITAL.png"
+  },
+  {
+    "sku": "BP5WRX.259.120",
+    "name": "BritaPRO Filter For Tankless Reverse Osmosis",
+    "category": "Drinking Water",
+    "subcategory": "Reverse Osmosis (RO)"
+  },
+  {
+    "sku": "BP5WRX.259.119",
+    "name": "BritaPRO Dow Membrane For Tankless Reverse Osmosis",
+    "category": "Drinking Water",
+    "subcategory": "Reverse Osmosis (RO)"
+  },
+  {
+    "sku": "BPUSF4001",
+    "name": "BritaPRO 10” Sediment Carbon Filtration Filter Replacement- Individual",
+    "category": "Drinking Water",
+    "subcategory": "Single Stage Filters"
+  },
+  {
+    "sku": "BPUSF4003",
+    "name": "BritaPRO 14” Lead, Voc With Anti-Microbial Filter Replacement- Individual",
+    "category": "Drinking Water",
+    "subcategory": "Single Stage Filters"
+  },
+  {
+    "sku": "BPUSF4004",
+    "name": "BritaPRO 14” Pfas And Pharma With Anti-Microbial Filter Replacement- Individual",
+    "category": "Drinking Water",
+    "subcategory": "Single Stage Filters"
+  },
+  {
+    "sku": "BPUSF4005",
+    "name": "BritaPRO Quick-Twist Microbiological Purifier Filter Replacement- Individual",
+    "category": "Drinking Water",
+    "subcategory": "Single Stage Filters"
+  },
+  {
+    "sku": "BPUSF4001CA",
+    "name": "BritaPRO 10” Sediment Carbon Filtration Filter Replacement- Case Of 12",
+    "category": "Drinking Water",
+    "subcategory": "Single Stage Filters"
+  },
+  {
+    "sku": "BPUSF4003CA",
+    "name": "BritaPRO 14” Lead, Voc With Anti-Microbial Filter Replacement- Case Of 12",
+    "category": "Drinking Water",
+    "subcategory": "Single Stage Filters"
+  },
+  {
+    "sku": "BPUSF4004CA",
+    "name": "BritaPRO 14” Pfas And Pharma With Anti-Microbial Filter Replacement- Case Of 12",
+    "category": "Drinking Water",
+    "subcategory": "Single Stage Filters"
+  },
+  {
+    "sku": "BPUSF4005CA",
+    "name": "BritaPRO Quick-Twist Microbiological Purifier Filter Replacement- Case Of 6",
+    "category": "Drinking Water",
+    "subcategory": "Single Stage Filters"
+  },
+  {
+    "sku": "BPWHF8001",
+    "name": "BritaPRO Sediment Filter Whole House Filters - 20\" Drop In Heavy Duty",
+    "category": "Whole-House",
+    "subcategory": "Titanium LT"
+  },
+  {
+    "sku": "BPWHF8002",
+    "name": "BritaPRO Lead Filter Whole House Filters - 20\" Drop In Heavy Duty",
+    "category": "Whole-House",
+    "subcategory": "Titanium LT"
+  },
+  {
+    "sku": "BPWHF8003",
+    "name": "BritaPRO Pfas Filter Whole House Filters - 20\" Drop In Heavy Duty",
+    "category": "Whole-House",
+    "subcategory": "Titanium LT"
+  },
+  {
+    "sku": "BPWHF8004",
+    "name": "BritaPRO Chloramine/Chlorine Filter Whole House Filters - 20\" Drop In Heavy Duty",
+    "category": "Whole-House",
+    "subcategory": "Titanium LT"
+  },
+  {
+    "sku": "BPWHF8005",
+    "name": "BritaPRO Anti-Scale Polyphosphate Crystal Filter Whole House Filters - 20\" Drop In Heavy Duty",
+    "category": "Whole-House",
+    "subcategory": "Titanium LT"
+  },
+  {
+    "sku": "BPWHF8006",
+    "name": "BritaPRO Chloramine Plus Filter Whole House Filters - 20\" Drop In Heavy Duty",
+    "category": "Whole-House",
+    "subcategory": "Titanium LT"
   }
 ]
