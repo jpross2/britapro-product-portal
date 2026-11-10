@@ -303,6 +303,7 @@ function openProductDetail(sku,push=false){
  const title=document.createElement('h2');title.id='productDetailTitle';title.textContent=spec?.name||record?.name||id;body.append(title);
  const code=document.createElement('p');code.className='detail-sku';code.textContent=id;body.append(code);
  if(spec){
+  if(spec.subtitle==='Filters not Included'){const note=document.createElement('p');note.textContent=spec.subtitle;body.append(note)}
   if(spec.purpose){const purpose=document.createElement('p');purpose.textContent=spec.purpose;body.append(purpose)}
   const points=String(spec.description||'').split(/[•\r\n]+/).map(v=>v.trim()).filter(Boolean);
   for(const [value,label] of [[spec.tankDimensions,'Tank dimensions'],[spec.operation,'Operation']]){
