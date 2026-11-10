@@ -16,7 +16,7 @@
 .concern-checks dd:last-child{margin-bottom:0}
 
 
-</style></head><body>
+</style><script>if('scrollRestoration' in history)history.scrollRestoration='manual';function britaResetScroll(){window.scrollTo(0,0);requestAnimationFrame(()=>window.scrollTo(0,0))}window.addEventListener('pageshow',britaResetScroll);window.addEventListener('load',britaResetScroll);</script></head><body>
 <header><a class="brand" href="https://britapro-partner-portal.netlify.app/" aria-label="Return to BritaPRO Partner Portal"><img class="brand-logo" src="/britapro-logo.svg" alt="BritaPRO" width="188" height="28"><small>PRODUCT PORTAL</small></a></header>
 <main><div id="home"><h1>Product Resources</h1><p class="intro">Browse by product category, search by SKU, or start with a water concern. No pricing is displayed.</p>
 <div class="controls"><input id="homeSearch" type="search" placeholder="Search all products by name, SKU, or keyword…" aria-label="Search entire product catalog"></div>
@@ -73,8 +73,8 @@ const drinkingWaterGroups=['Reverse Osmosis (RO)','Single Stage Filters'];const 
 
 const categoryIconLibrary={"drinking":["#167aa8","<path d=\"M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13z\"/><path d=\"M9 16l2 2 4-5\"/>"],"hardness":["#a66a1e","<path d=\"M4 19h16M7 16l3-7 4 3 3-8M5 5l2 2m10 9 2 2\"/>"],"catalytic-carbon":["#1975a3","<path d=\"M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13z\"/><path d=\"M8 15h8M10 12h4\"/>"],"acid-neutralizer":["#1b8a73","<path d=\"M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13z\"/><path d=\"M9 15h6m-3-3v6\"/>"],"iron-sulfur":["#a66a1e","<path d=\"M6 19h12M8 19V6h8v13M7 6h10M10 10h4M10 14h4M10 3h4\"/>"],"nitrate":["#8c57a2","<path d=\"M5 4h14v16H5zM9 9h6M9 13h6M9 17l2 2 4-4\"/>"],"pfas":["#a94b72","<path d=\"M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13z\"/><path d=\"M9 12l6 6m0-6-6 6\"/>"],"sediment":["#a66a1e","<path d=\"M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13z\"/><circle cx=\"9\" cy=\"15\" r=\"1\"/><circle cx=\"14\" cy=\"17\" r=\"1\"/><circle cx=\"14\" cy=\"12\" r=\"1\"/>"],"scale-prevention":["#1975a3","<path d=\"M4 19h16M6 15l12-8M7 8l10 9M12 3v3m-7 5-2 2m16-2 2 2\"/>"],"lead":["#5967a4","<path d=\"M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13z\"/><path d=\"M9 13h6m-3-3v6\"/>"],"default":["#5967a4","<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7v5l3 2\"/>"]};function categoryIcon(key){const span=document.createElement('span');span.className='category-symbol';span.setAttribute('aria-hidden','true');const [color,paths]=categoryIconLibrary[key]||categoryIconLibrary.default;span.style.background=color;span.style.color='#fff';span.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">'+paths+'</svg>';return span}function concernIconKey(key){const k=key.toLowerCase();if(k.includes('drink'))return 'drinking';if(k.includes('hard')||k.includes('scale'))return 'hardness';if(k.includes('chlor'))return 'catalytic-carbon';if(k.includes('pfas'))return 'pfas';if(k.includes('nitrat'))return 'nitrate';if(k.includes('lead'))return 'lead';if(k.includes('iron')||k.includes('sulfur'))return 'iron-sulfur';if(k.includes('sediment')||k.includes('turbid'))return 'sediment';if(k.includes('ph')||k.includes('acid'))return 'acid-neutralizer';return 'default'}
 function show(category,recordHistory=true){$('concerns').hidden=true;selected=category;selectedSub='';selectedType='';$('home').style.display=category?'none':'block';$('section').style.display=category?'block':'none';$('search').value='';if(category){$('heading').textContent=names[category]||'All Products';render()}if(recordHistory)history.pushState({category,sub:'',type:''},'',category?'#'+(category==='Whole-House'?'whole-house':category==='All'?'all':'drinking-water'):location.pathname)}
-function showSub(group,recordHistory=true){selectedSub=group;selectedType='';$('search').value='';render();if(recordHistory)history.pushState({category:selected,sub:group,type:''},'',location.pathname+'#'+(selected==='Whole-House'?'whole-house':'drinking-water')+'/'+encodeURIComponent(group))}
-function showType(type,recordHistory=true){selectedType=type;$('search').value='';render();if(recordHistory){const base=location.pathname+'#'+(selected==='Whole-House'?'whole-house':'drinking-water')+'/'+encodeURIComponent(selectedSub);history.pushState({category:selected,sub:selectedSub,type},'',base+(type?'/'+encodeURIComponent(type):''))}}
+function showSub(group,recordHistory=true){britaResetScroll();selectedSub=group;selectedType='';$('search').value='';render();if(recordHistory)history.pushState({category:selected,sub:group,type:''},'',location.pathname+'#'+(selected==='Whole-House'?'whole-house':'drinking-water')+'/'+encodeURIComponent(group))}
+function showType(type,recordHistory=true){britaResetScroll();selectedType=type;$('search').value='';render();if(recordHistory){const base=location.pathname+'#'+(selected==='Whole-House'?'whole-house':'drinking-water')+'/'+encodeURIComponent(selectedSub);history.pushState({category:selected,sub:selectedSub,type},'',base+(type?'/'+encodeURIComponent(type):''))}}
 const stagedPartSections={
  'Titanium LT':['BPWHF8001','BPWHF8002','BPWHF8003','BPWHF8004','BPWHF8005','BPWHF8006'],
  'Reverse Osmosis (RO)':['BP5WRX.259.120','BP5WRX.259.119'],
@@ -190,7 +190,7 @@ const waterConcerns = {
   }
 };
 
-function showConcerns(key = '', recordHistory = true) {
+function showConcerns(key = '', recordHistory = true) {britaResetScroll();
   const concern = Object.hasOwn(waterConcerns, key) ? waterConcerns[key] : null;
   show('', false);
   $('home').style.display = 'none';
@@ -218,7 +218,7 @@ function showConcerns(key = '', recordHistory = true) {
   }
   if (recordHistory) {
     history.pushState(null, '', concern ? '#water-concerns/' + key : '#water-concerns');
-    (concern ? $('concernTitle') : $('concernHeading')).focus();
+    (concern ? $('concernTitle') : $('concernHeading')).focus({preventScroll:true});
   }
 }
 
@@ -241,6 +241,6 @@ $('concernsHome').addEventListener('click', () => {
 });
 $('allConcerns').addEventListener('click', () => showConcerns());
 
-window.addEventListener('popstate',restoreNavigation);
+window.addEventListener('popstate',()=>{restoreNavigation();britaResetScroll()});
 fetch('/sales-sheets/catalog.json').then(r=>{if(!r.ok)throw Error('Unable to load product resources');return r.json()}).then(data=>{records=data;restoreNavigation()}).catch(e=>{document.querySelector('.intro').textContent=e.message});
 </script></body></html>
