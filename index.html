@@ -56,14 +56,7 @@ const ORDERING_PORTAL_URL='https://britapro-order-portal.netlify.app/';
 function orderingDescriptionUrl(sku){const url=new URL(ORDERING_PORTAL_URL);url.searchParams.set('sku',sku);url.searchParams.set('view','description');return url.toString()}const wholeHouseGroups=['Water Softeners','Backwashing Filters','Mid-Plates','Non-Backwashing Filters (NRV)','Specialty Filters','Titanium LT','UV Systems','Other Whole-House Products'];
 const categoryPhotoNames={'Titanium LT':'TitaniumLT 3 Stage GREY','Backwashing Filters':'Platinum Valve Catalytic Carbon','Non-Backwashing Filters (NRV)':'Non-backwashing Catalytic Carbon','Specialty Filters':'Platinum Valve PFAS','Water Softeners':'Softener','Mid-Plates':'Softener Carbon Mid-Plate','UV Systems':'UV','Other Whole-House Products':'Leak Detection','Reverse Osmosis (RO)':'RO Tankless','Single Stage Filters':'SingleStage 14in PFAS'};
 const drinkingWaterGroups=['Reverse Osmosis (RO)','Single Stage Filters'];const names={'Whole-House':'Whole-House Systems','Drinking Water':'Drinking Water Systems'};const productTypeGroups={
- 'Backwashing Filters':[
-  {id:'catalytic-carbon',title:'Catalytic Carbon',detail:'Chlorine & chloramine',record:'Platinum Valve Catalytic Carbon'},
-  {id:'acid-neutralizer',title:'Acid Neutralizing Media',detail:'Acidic water / low pH',record:'Platinum Valve Neutralizer'},
-  {id:'iron-sulfur',title:'Iron & Sulfur',detail:'Aeration treatment',record:'Platinum Valve Aeration'},
-  {id:'nitrate',title:'Nitrate Reduction',detail:'Nitrate treatment',record:'Platinum Valve Nitrate'},
-  {id:'pfas',title:'PFAS Treatment',detail:'Whole-house PFAS',record:'Platinum Valve PFAS'},
-  {id:'sediment',title:'Sediment & Turbidity',detail:'Filter AG Plus',record:'Platinum Valve Particulate'}
- ],
+ 'Backwashing Filters':['catalytic-carbon','Catalytic Carbon','Chlorine & chloramine','Platinum Valve Catalytic Carbon','acid-neutralizer','Acid Neutralizing Media','Acidic water / low pH','Platinum Valve Neutralizer','iron-sulfur','Iron & Sulfur','Aeration treatment','Platinum Valve Aeration','nitrate','Nitrate Reduction','Nitrate treatment','Platinum Valve Nitrate','pfas','PFAS Treatment','Whole-house PFAS','Platinum Valve PFAS','sediment','Sediment & Turbidity','Filter AG Plus','Platinum Valve Particulate','BPV3195-01','BPD1203','BP92554','BPH4615','BPV3194','BPV3331','BPV3192','BPV3158','BP3162017','BP3162027','BPV3162-065','BPV5159','BPV3159','BPV3162-022','BPV3105','BPVLVCOVER','BP1054J','BPV310601','BPV3178C','BPV3002-B','BPV3174','BPV3163','BPV3003','BPV3110','BPV3728','BPV3792','BPV3430','BPV3407'],
  'Non-Backwashing Filters (NRV)':[
   {id:'catalytic-carbon',title:'Catalytic Carbon',detail:'Chlorine & chloramine',record:'Non-backwashing Catalytic Carbon'},
   {id:'acid-neutralizer',title:'Acid Neutralizing Media',detail:'Acidic water / low pH',record:'Non-backwashing Neutralizer'},
@@ -82,8 +75,8 @@ const stagedPartSections={
  'UV Systems':['BPL6','BPQ6','BPL10','BPQ10','BPL20','BPQ20'],
  'Other Whole-House Products':['BPF104F'],
  'Backwashing Filters':['BPWS1LRV','BPV4099','BPV4478LR'],
- 'Water Softeners':['BPV4099','BPWS125LRV','BPV4478LR','BPT6002','BPS6304','BPCG2287-21','BPBTLID','BPH1085-01','BPH1018','BPBTCOMPLETE','BP4740','BP4740-L'],
- 'Mid-Plates':['BPV4478LR','BPT6002','BPS6304','BPCG2287-21','BPBTLID','BPH1085-01','BPH1018','BPBTCOMPLETE','BP4740','BP4740-L'],
+ 'Water Softeners':['BPV4099','BPWS125LRV','BPV4478LR','BPT6002','BPS6304','BPCG2287-21','BPBTLID','BPH1085-01','BPH1018','BPBTCOMPLETE','BP4740','BP4740-L','BPV3195-01','BPD1203','BP92554','BPH4615','BPV3194','BPV3331','BPV3192','BPV3158','BP3162017','BP3162027','BPV3162-065','BPV5159','BPV3159','BPV3162-022','BPV3105','BPVLVCOVER','BP1054J','BPV310601','BPV3178C','BPV3002-B','BPV3174','BPV3163','BPV3003','BPV3110','BPV3728','BPV3792','BPV3430','BPV3407'],
+ 'Mid-Plates':['BPV4478LR','BPT6002','BPS6304','BPCG2287-21','BPBTLID','BPH1085-01','BPH1018','BPBTCOMPLETE','BP4740','BP4740-L','BPV3195-01','BPD1203','BP92554','BPH4615','BPV3194','BPV3331','BPV3192','BPV3158','BP3162017','BP3162027','BPV3162-065','BPV5159','BPV3159','BPV3162-022','BPV3105','BPVLVCOVER','BP1054J','BPV310601','BPV3178C','BPV3002-B','BPV3174','BPV3163','BPV3003','BPV3110','BPV3728','BPV3792','BPV3430','BPV3407'],
  'Non-Backwashing Filters (NRV)':['BPD1400']
 };
 function renderSectionParts(){
