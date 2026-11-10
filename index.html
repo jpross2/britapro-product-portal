@@ -175,7 +175,7 @@ function renderSectionParts(){
   if(!seen.has(key)){seen.add(key);partRecords.push(record)}
  }
  const details=document.createElement('details');details.id='sectionParts';details.style.cssText='border:1px solid #d3e1eb;background:white;border-radius:14px;padding:16px;margin-top:22px';
- const summary=document.createElement('summary');summary.textContent='Filters, Parts, and Accessories ('+partRecords.length+')';summary.style.cssText='cursor:pointer;font-weight:800;color:#075b96';details.append(summary);
+ const summary=document.createElement('summary');summary.textContent='Filters, Parts, and Accessories';summary.style.cssText='cursor:pointer;font-weight:800;color:#075b96';details.append(summary);
  if(partRecords.length){
   const grid=document.createElement('div');grid.className='grid';grid.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:16px';
   renderCards(partRecords,grid);details.append(grid);
