@@ -113,12 +113,13 @@ let specificationsBySku=new Map();
 function appendSpecifications(box,skus){
  const entries=skus.map(sku=>specificationsBySku.get(String(sku).toUpperCase())).filter(Boolean);
  if(!entries.length)return;
- const fields=[['mediaType','Media type'],['mediaVolume','Media volume'],['tankDimensions','Tank dimensions'],['operation','Operation'],['purpose','Treatment purpose']];
+ const dualMedia=entries.every(s=>s.carbonVolume);
+ const fields=[['mediaType','Media type'],...(dualMedia?[['resinVolume','Resin volume'],['carbonVolume','Catalytic carbon volume']]:[['mediaVolume','Media volume']]),['tankDimensions','Tank dimensions'],['operation','Operation'],['purpose','Treatment purpose']];
  for(const [key,label] of fields){
   const values=entries.map(s=>s[key]||'');
   if(!values.some(Boolean))continue;
   const line=document.createElement('p');line.className='specification-point';
-  const fieldLabel=key==='mediaType'&&entries.every(s=>s.resinType)?'Resin media':label;
+  const fieldLabel=key==='mediaType'&&entries.every(s=>s.resinType&&!s.carbonVolume)?'Resin media':label;
   line.textContent=values.every(v=>v===values[0])?fieldLabel+': '+values[0]:fieldLabel+': '+entries.filter(s=>s[key]).map(s=>s.sku+' — '+s[key]).join('; ');
   box.append(line);
  }
