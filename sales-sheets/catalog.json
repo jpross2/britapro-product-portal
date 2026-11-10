@@ -374,45 +374,85 @@
     "brochurePath": "sales-sheets/whole-house/BP_Softener_Brochure.DIGITAL.pdf"
   },
   {
-    "name": "TitaniumLT 1 Stage GREY",
-    "category": "Whole-House",
-    "path": "sales-sheets/drinking-water/BP_TitaniumLT_1 Stage_GREY.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_Titanium LT_1 Stage_TechSheet.DIGITAL.pdf",
-    "subcategory": "Titanium LT",
-    "imageSku": "BP420H1BKIT",
-    "imagePath": "product-images/BP_TitaniumLT_1_Stage_GREY.png",
-    "skus": [
-      "BP420H1BKIT"
-    ],
-    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf",
-    "brochurePath": "sales-sheets/drinking-water/BP_Titanium LT_Brochure.DIGITAL.pdf"
-  },
-  {
-    "name": "TitaniumLT 2 Stage GREY",
-    "category": "Whole-House",
-    "path": "sales-sheets/drinking-water/BP_TitaniumLT_2 Stage_GREY.SalesSheet.DIGITAL.pdf",
-    "techPath": "tech-sheets/drinking-water/BP_Titanium LT_2 Stage_TechSheet.DIGITAL.pdf",
-    "subcategory": "Titanium LT",
-    "imageSku": "BP420-H-1DUO-B-KIT",
-    "imagePath": "product-images/BP_TitaniumLT_2_Stage_GREY.png",
-    "skus": [
-      "BP420-H-1DUO-B-KIT"
-    ],
-    "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf",
-    "brochurePath": "sales-sheets/drinking-water/BP_Titanium LT_Brochure.DIGITAL.pdf"
-  },
-  {
-    "name": "TitaniumLT 3 Stage GREY",
+    "name": "Titanium LT",
     "category": "Whole-House",
     "path": "sales-sheets/drinking-water/BP_TitaniumLT_3 Stage_GREY.SalesSheet.DIGITAL.pdf",
     "techPath": "tech-sheets/drinking-water/BP_Titanium LT_3 Stage_TechSheet.DIGITAL.pdf",
     "subcategory": "Titanium LT",
     "imagePath": "product-images/BP_TitaniumLT_3_Stage_GREY.png",
     "skus": [
-      "BPWHS8000L"
+      "BPWHS8000L",
+      "BP420-H-1DUO-B-KIT",
+      "BP420H1BKIT"
     ],
     "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf",
-    "brochurePath": "sales-sheets/drinking-water/BP_Titanium LT_Brochure.DIGITAL.pdf"
+    "brochurePath": "sales-sheets/drinking-water/BP_Titanium LT_Brochure.DIGITAL.pdf",
+    "skuLabels": {
+      "BPWHS8000L": "Triple",
+      "BP420-H-1DUO-B-KIT": "Double",
+      "BP420H1BKIT": "Single"
+    },
+    "variants": [
+      {
+        "name": "TitaniumLT 3 Stage GREY",
+        "category": "Whole-House",
+        "path": "sales-sheets/drinking-water/BP_TitaniumLT_3 Stage_GREY.SalesSheet.DIGITAL.pdf",
+        "techPath": "tech-sheets/drinking-water/BP_Titanium LT_3 Stage_TechSheet.DIGITAL.pdf",
+        "subcategory": "Titanium LT",
+        "imagePath": "product-images/BP_TitaniumLT_3_Stage_GREY.png",
+        "skus": [
+          "BPWHS8000L"
+        ],
+        "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf",
+        "brochurePath": "sales-sheets/drinking-water/BP_Titanium LT_Brochure.DIGITAL.pdf"
+      },
+      {
+        "name": "TitaniumLT 2 Stage GREY",
+        "category": "Whole-House",
+        "path": "sales-sheets/drinking-water/BP_TitaniumLT_2 Stage_GREY.SalesSheet.DIGITAL.pdf",
+        "techPath": "tech-sheets/drinking-water/BP_Titanium LT_2 Stage_TechSheet.DIGITAL.pdf",
+        "subcategory": "Titanium LT",
+        "imageSku": "BP420-H-1DUO-B-KIT",
+        "imagePath": "product-images/BP_TitaniumLT_2_Stage_GREY.png",
+        "skus": [
+          "BP420-H-1DUO-B-KIT"
+        ],
+        "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf",
+        "brochurePath": "sales-sheets/drinking-water/BP_Titanium LT_Brochure.DIGITAL.pdf"
+      },
+      {
+        "name": "TitaniumLT 1 Stage GREY",
+        "category": "Whole-House",
+        "path": "sales-sheets/drinking-water/BP_TitaniumLT_1 Stage_GREY.SalesSheet.DIGITAL.pdf",
+        "techPath": "tech-sheets/drinking-water/BP_Titanium LT_1 Stage_TechSheet.DIGITAL.pdf",
+        "subcategory": "Titanium LT",
+        "imageSku": "BP420H1BKIT",
+        "imagePath": "product-images/BP_TitaniumLT_1_Stage_GREY.png",
+        "skus": [
+          "BP420H1BKIT"
+        ],
+        "manualPath": "manuals/whole-house/Platinum_TitaniumLT_Manual.DIGITAL.pdf",
+        "brochurePath": "sales-sheets/drinking-water/BP_Titanium LT_Brochure.DIGITAL.pdf"
+      }
+    ],
+    "guidePaths": [
+      {
+        "path": "sales-sheets/drinking-water/BP_TitaniumLT_2 Stage_GREY.SalesSheet.DIGITAL.pdf",
+        "label": "Double Sales Sheet"
+      },
+      {
+        "path": "tech-sheets/drinking-water/BP_Titanium LT_2 Stage_TechSheet.DIGITAL.pdf",
+        "label": "Double Technical Sheet"
+      },
+      {
+        "path": "sales-sheets/drinking-water/BP_TitaniumLT_1 Stage_GREY.SalesSheet.DIGITAL.pdf",
+        "label": "Single Sales Sheet"
+      },
+      {
+        "path": "tech-sheets/drinking-water/BP_Titanium LT_1 Stage_TechSheet.DIGITAL.pdf",
+        "label": "Single Technical Sheet"
+      }
+    ]
   },
   {
     "name": "UV",
