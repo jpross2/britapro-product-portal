@@ -80,7 +80,9 @@ const stagedPartSections={
  'Reverse Osmosis (RO)':['BP5WRX.259.120','BP5WRX.259.119'],
  'Single Stage Filters':['BPUSF4001','BPUSF4002','BPUSF4003','BPUSF4004','BPUSF4005','BPUSF4006','BPUSF4001CA','BPUSF4002CA','BPUSF4003CA','BPUSF4004CA','BPUSF4005CA','BPUSF4006CA'],
  'UV Systems':['BPL6','BPQ6','BPL10','BPQ10','BPL20','BPQ20'],
- 'Other Whole-House Products':['BPF104F']
+ 'Other Whole-House Products':['BPF104F'],
+ 'Water Softeners':['BPWS1LRV'],
+ 'Mid-Plates':['BPWS1LRV']
 };
 function renderSectionParts(){
  const old=document.getElementById('sectionParts');if(old)old.remove();
@@ -90,7 +92,7 @@ function renderSectionParts(){
  const details=document.createElement('details');details.id='sectionParts';details.style.cssText='border:1px solid #d3e1eb;background:white;border-radius:14px;padding:16px;margin-top:22px';
  const summary=document.createElement('summary');summary.textContent='Filters, Parts, and Accessories ('+skus.length+')';summary.style.cssText='cursor:pointer;font-weight:800;color:#075b96';details.append(summary);
  if(skus.length){
-  const note=document.createElement('p');note.textContent=['Titanium LT','Reverse Osmosis (RO)','Single Stage Filters'].includes(selectedSub)?'Confirmed replacement filters'+(selectedSub==='Single Stage Filters'?' — CA suffix denotes a case of 12':''):'Proposed compatibility — please verify before approval';note.style.cssText='font-weight:700;color:#8a5b11';details.append(note);
+  const note=document.createElement('p');note.textContent=['Titanium LT','Reverse Osmosis (RO)','Single Stage Filters','Water Softeners','Mid-Plates'].includes(selectedSub)?'Confirmed replacement filters'+(selectedSub==='Single Stage Filters'?' — CA suffix denotes a case of 12':''):'Proposed compatibility — please verify before approval';note.style.cssText='font-weight:700;color:#8a5b11';details.append(note);
   const grid=document.createElement('div');grid.className='grid';grid.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:16px';
   const partRecords=skus.map(sku=>records.find(r=>(r.skus||[r.sku||r.SKU||r.imageSku]).includes(sku))||{name:partNames[sku]||(sku.startsWith('BPUSF')?'Single Stage Replacement Filter'+(sku.endsWith('CA')?' — Case of 12':''):sku.startsWith('BPWHF')?'Titanium LT Replacement Filter':sku.endsWith('.120')?'Tankless RO Replacement Membrane':'Tankless RO Replacement Filter'),sku,imageSku:sku,subcategory:selectedSub,category:selected});
   renderCards(partRecords,grid);details.append(grid);
