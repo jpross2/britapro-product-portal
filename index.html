@@ -21,6 +21,18 @@
 /* Apply the same top-aligned, contained image treatment to every product view. */
 .product-image,.category-photo,.home-photo-group img{display:block;min-width:0;min-height:0;flex-shrink:0;object-fit:contain;object-position:center top}
 .home-photo-group{align-items:flex-start}
+
+.product-detail-dialog{border:0;border-radius:16px;padding:22px;width:min(92vw,680px);max-height:90vh;overflow:auto;color:#17334b;background:#fff}
+.product-detail-dialog::backdrop{background:#12243899}
+.detail-close{display:block;margin:0 0 12px auto;border:0;border-radius:8px;padding:10px 14px;cursor:pointer;background:#eef3f6;color:#17334b;font:inherit}
+.detail-product-image{display:block;width:100%;height:220px;min-height:0;object-fit:contain;object-position:center top;margin:0 0 18px}
+.product-detail-dialog h2{font-size:24px;line-height:1.3;margin:0 0 10px}
+.detail-sku{font-weight:750}
+.detail-key-points{padding-left:1.2em;line-height:1.45;margin:14px 0}
+.detail-key-points li{padding:0 0 7px 2px}
+.detail-resources{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.detail-resources a{background:#116da3;color:#fff;border-radius:8px;padding:10px 13px;text-decoration:none}
+@media(max-width:520px){.product-detail-dialog{padding:16px;width:calc(100vw - 20px)}.detail-product-image{height:190px}}
 </style><script>if('scrollRestoration' in history)history.scrollRestoration='manual';function britaResetScroll(){window.scrollTo(0,0);requestAnimationFrame(()=>window.scrollTo(0,0))}window.addEventListener('pageshow',britaResetScroll);window.addEventListener('load',britaResetScroll);</script></head><body>
 <header><a class="brand" href="https://britapro-partner-portal.netlify.app/" aria-label="Return to BritaPRO Partner Portal"><img class="brand-logo" src="/britapro-logo.svg" alt="BritaPRO" width="188" height="28"><small>PRODUCT PORTAL</small></a></header>
 <main><div id="home"><h1>Product Resources</h1><p class="intro">Browse by product category, search by SKU, or start with a water concern. No pricing is displayed.</p>
@@ -114,6 +126,50 @@ function render(){
 }
 
 let specificationsBySku=new Map();
+
+const productDialog=document.createElement('dialog');
+productDialog.className='product-detail-dialog';
+productDialog.setAttribute('aria-labelledby','productDetailTitle');
+document.body.append(productDialog);
+let detailReturnFocus=null,detailPushed=false;
+function productDetailUrl(sku){const url=new URL(location.href);url.searchParams.set('sku',sku);return url.pathname+url.search+url.hash}
+function closeProductDetail(){
+ if(detailPushed){history.back();return}
+ productDialog.close();
+ const url=new URL(location.href);url.searchParams.delete('sku');history.replaceState(history.state,'',url.pathname+url.search+url.hash);
+ detailReturnFocus?.focus({preventScroll:true});
+}
+productDialog.addEventListener('cancel',e=>{e.preventDefault();closeProductDetail()});
+productDialog.addEventListener('click',e=>{if(e.target===productDialog){const b=productDialog.getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom)closeProductDetail()}});
+function openProductDetail(sku,push=false){
+ const id=String(sku).trim().toUpperCase();
+ const record=records.find(r=>(r.skus?.length?r.skus:[r.sku||r.SKU||r.imageSku].filter(Boolean)).some(v=>String(v).toUpperCase()===id));
+ const spec=specificationsBySku.get(id);
+ if(!productDialog.open)detailReturnFocus=document.activeElement;
+ const body=document.createElement('div');
+ const close=document.createElement('button');close.type='button';close.className='detail-close';close.textContent='Close ×';close.addEventListener('click',closeProductDetail);body.append(close);
+ if(record?.imagePath){const img=document.createElement('img');img.className='detail-product-image';img.alt=spec?.name||record.name;img.src='/'+record.imagePath.split('/').map(encodeURIComponent).join('/');img.addEventListener('error',()=>img.remove());body.append(img)}
+ const title=document.createElement('h2');title.id='productDetailTitle';title.textContent=spec?.name||record?.name||id;body.append(title);
+ const code=document.createElement('p');code.className='detail-sku';code.textContent=id;body.append(code);
+ if(spec){
+  if(spec.purpose){const purpose=document.createElement('p');purpose.textContent=spec.purpose;body.append(purpose)}
+  const points=String(spec.description||'').split(/[•\r\n]+/).map(v=>v.trim()).filter(Boolean);
+  for(const [value,label] of [[spec.tankDimensions,'Tank dimensions'],[spec.operation,'Operation']]){
+   if(value&&!points.some(point=>point.toLowerCase().replace(/[^a-z0-9]/g,'').includes(value.toLowerCase().replace(/[^a-z0-9]/g,''))))points.push(label+': '+value);
+  }
+  if(points.length){const list=document.createElement('ul');list.className='detail-key-points';for(const point of points){const li=document.createElement('li');li.textContent=point;list.append(li)}body.append(list)}
+ }else{const note=document.createElement('p');note.textContent='Product specifications are currently unavailable.';note.setAttribute('role','status');body.append(note)}
+ if(record){
+  const docs=[[record.path,'Sales Sheet'],[record.brochurePath,'Brochure'],[record.techPath,'Technical Sheet'],[record.manualPath,'Installation Manual'],...(record.guidePaths||[]).map(g=>[g.path,g.label])].filter(([path])=>path);
+  if(docs.length){const links=document.createElement('div');links.className='detail-resources';for(const [path,label] of docs){const link=document.createElement('a');link.href='/'+path.split('/').map(encodeURIComponent).join('/');link.target='_blank';link.rel='noopener';link.textContent=label;links.append(link)}body.append(links)}
+ }
+ productDialog.replaceChildren(body);
+ if(push){history.pushState({...history.state,productDetail:true},'',productDetailUrl(id));detailPushed=true}
+ if(!productDialog.open)productDialog.showModal();
+ productDialog.scrollTop=0;close.focus({preventScroll:true});
+}
+function restoreProductDetail(){const sku=new URLSearchParams(location.search).get('sku');if(sku)openProductDetail(sku);else if(productDialog.open){productDialog.close();detailPushed=false;detailReturnFocus?.focus({preventScroll:true})}}
+
 function appendSpecifications(box,skus){
  const entries=skus.map(sku=>specificationsBySku.get(String(sku).toUpperCase())).filter(Boolean);
  if(!entries.length)return;
@@ -129,7 +185,7 @@ function appendSpecifications(box,skus){
  }
 }
 
-function renderCards(rows, grid){grid.replaceChildren();for(const r of rows){const box=document.createElement('article');box.className='card';const placeholder=document.createElement('div');placeholder.className='placeholder';placeholder.textContent='BritaPRO product photo coming soon';if(r.imagePath){const img=document.createElement('img');img.className='product-image';img.alt='BritaPRO '+r.name+' product image';img.loading='lazy';img.src='/'+r.imagePath.split('/').map(encodeURIComponent).join('/');img.onerror=()=>img.replaceWith(placeholder);box.append(img)}else{box.append(placeholder)}const h=document.createElement('h3');h.textContent=r.name;box.append(h);const skus=r.skus?.length?r.skus:[r.sku||r.SKU||r.imageSku].filter(Boolean);const skuLabel=document.createElement('div');skuLabel.className='product-sku';if(skus.length){skuLabel.append(document.createTextNode(skus.length===1?'SKU: ':'Available Sizes: '));skus.forEach((sku,index)=>{if(index)skuLabel.append(document.createTextNode(' · '));const link=document.createElement('a');link.href=orderingDescriptionUrl(sku);link.textContent=sku;link.setAttribute('aria-label','View '+sku+' product description in BritaPRO Orders');skuLabel.append(link)})}else{skuLabel.textContent='SKU confirmation pending'}box.append(skuLabel);appendSpecifications(box,skus);const docs=[];for(const [path,title,desc] of [[r.path,'Sales Sheet','Product overview'],[r.brochurePath,'Brochure','Product literature'],[r.techPath,'Technical Sheet','Specifications'],[r.manualPath,'Installation Manual','Installation instructions']]){if(path)docs.push({path,title,desc})}const makeDocLink=({path,title,desc})=>{const link=document.createElement('a');link.className='doc-link';link.href='/'+path.split('/').map(encodeURIComponent).join('/');link.target='_blank';link.rel='noopener';link.setAttribute('aria-label','Open '+title+' PDF');const icon=document.createElement('span');icon.className='doc-icon';const docKind=/startup|procedure/i.test(title)?'startup':/installation guide/i.test(title)?'guide':/installation manual/i.test(title)?'manual':/technical/i.test(title)?'technical':/brochure/i.test(title)?'brochure':'sales';const docIcons={sales:['#176fa5','<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 16v-4m4 4V8m4 8v-6"/>'],brochure:['#147f70','<path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1zM12 6v14"/>'],technical:['#5967a4','<path d="M6 3h9l4 4v14H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM15 3v5h4M8 12h8M8 16h5"/><circle cx="16" cy="16" r="2"/>'],manual:['#a66a1e','<path d="M5 4h13a2 2 0 0 1 2 2v15H7a3 3 0 0 1-3-3V6a2 2 0 0 1 1-2zM4 18a3 3 0 0 1 3-3h13M9 8h7m-7 3h5"/>'],guide:['#147f70','<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 12l3 3 5-6M8 7h8"/>'],startup:['#b64c55','<circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z"/>']};const [docColor,docPath]=docIcons[docKind];icon.style.background=docColor;icon.style.color='#fff';icon.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+docPath+'</svg>';const meta=document.createElement('span');meta.className='doc-meta';const name=document.createElement('span');name.className='doc-title';name.textContent=title;const type=document.createElement('span');type.className='doc-type';type.textContent=desc+' · PDF';meta.append(name,type);const arrow=document.createElement('span');arrow.className='doc-arrow';arrow.textContent='↗';link.append(icon,meta,arrow);return link};if(docs.length){const list=document.createElement('div');list.className='doc-list';docs.forEach(doc=>list.append(makeDocLink(doc)));box.append(list)}if(r.guidePaths?.length){const heading=document.createElement('div');heading.className='doc-heading';heading.textContent='Installation & Startup';box.append(heading);const list=document.createElement('div');list.className='doc-list';for(const guide of r.guidePaths){list.append(makeDocLink({path:guide.path,title:guide.label,desc:'Installation & startup'}))}box.append(list)}grid.append(box)}}
+function renderCards(rows, grid){grid.replaceChildren();for(const r of rows){const box=document.createElement('article');box.className='card';const placeholder=document.createElement('div');placeholder.className='placeholder';placeholder.textContent='BritaPRO product photo coming soon';if(r.imagePath){const img=document.createElement('img');img.className='product-image';img.alt='BritaPRO '+r.name+' product image';img.loading='lazy';img.src='/'+r.imagePath.split('/').map(encodeURIComponent).join('/');img.onerror=()=>img.replaceWith(placeholder);box.append(img)}else{box.append(placeholder)}const h=document.createElement('h3');h.textContent=r.name;box.append(h);const skus=r.skus?.length?r.skus:[r.sku||r.SKU||r.imageSku].filter(Boolean);const skuLabel=document.createElement('div');skuLabel.className='product-sku';if(skus.length){skuLabel.append(document.createTextNode(skus.length===1?'SKU: ':'Available Sizes: '));skus.forEach((sku,index)=>{if(index)skuLabel.append(document.createTextNode(' · '));const link=document.createElement('a');link.href=productDetailUrl(sku);link.addEventListener('click',event=>{if(event.button===0&&!event.ctrlKey&&!event.metaKey&&!event.shiftKey&&!event.altKey){event.preventDefault();openProductDetail(sku,true)}});link.textContent=sku;link.setAttribute('aria-label','View '+sku+' product details in BritaPRO Product Portal');skuLabel.append(link)})}else{skuLabel.textContent='SKU confirmation pending'}box.append(skuLabel);appendSpecifications(box,skus);const docs=[];for(const [path,title,desc] of [[r.path,'Sales Sheet','Product overview'],[r.brochurePath,'Brochure','Product literature'],[r.techPath,'Technical Sheet','Specifications'],[r.manualPath,'Installation Manual','Installation instructions']]){if(path)docs.push({path,title,desc})}const makeDocLink=({path,title,desc})=>{const link=document.createElement('a');link.className='doc-link';link.href='/'+path.split('/').map(encodeURIComponent).join('/');link.target='_blank';link.rel='noopener';link.setAttribute('aria-label','Open '+title+' PDF');const icon=document.createElement('span');icon.className='doc-icon';const docKind=/startup|procedure/i.test(title)?'startup':/installation guide/i.test(title)?'guide':/installation manual/i.test(title)?'manual':/technical/i.test(title)?'technical':/brochure/i.test(title)?'brochure':'sales';const docIcons={sales:['#176fa5','<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 16v-4m4 4V8m4 8v-6"/>'],brochure:['#147f70','<path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1zM12 6v14"/>'],technical:['#5967a4','<path d="M6 3h9l4 4v14H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM15 3v5h4M8 12h8M8 16h5"/><circle cx="16" cy="16" r="2"/>'],manual:['#a66a1e','<path d="M5 4h13a2 2 0 0 1 2 2v15H7a3 3 0 0 1-3-3V6a2 2 0 0 1 1-2zM4 18a3 3 0 0 1 3-3h13M9 8h7m-7 3h5"/>'],guide:['#147f70','<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 12l3 3 5-6M8 7h8"/>'],startup:['#b64c55','<circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z"/>']};const [docColor,docPath]=docIcons[docKind];icon.style.background=docColor;icon.style.color='#fff';icon.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+docPath+'</svg>';const meta=document.createElement('span');meta.className='doc-meta';const name=document.createElement('span');name.className='doc-title';name.textContent=title;const type=document.createElement('span');type.className='doc-type';type.textContent=desc+' · PDF';meta.append(name,type);const arrow=document.createElement('span');arrow.className='doc-arrow';arrow.textContent='↗';link.append(icon,meta,arrow);return link};if(docs.length){const list=document.createElement('div');list.className='doc-list';docs.forEach(doc=>list.append(makeDocLink(doc)));box.append(list)}if(r.guidePaths?.length){const heading=document.createElement('div');heading.className='doc-heading';heading.textContent='Installation & Startup';box.append(heading);const list=document.createElement('div');list.className='doc-list';for(const guide of r.guidePaths){list.append(makeDocLink({path:guide.path,title:guide.label,desc:'Installation & startup'}))}box.append(list)}grid.append(box)}}
 document.querySelectorAll('[data-category]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.category)));$('back').addEventListener('click',()=>show(''));$('subBack').addEventListener('click',()=>selectedType?showType(''):showSub(''));$('search').addEventListener('input',render);
 $('homeSearch').addEventListener('input',function(){const q=this.value.trim();if(!q)return;show('All');$('search').value=q;render()});
 function restoreNavigation(){const raw=decodeURIComponent(location.hash.slice(1));const [part,...rest]=raw.split('/');if(part==='water-concerns'){showConcerns(rest[0],false);return}const category=part==='whole-house'?'Whole-House':part==='drinking-water'?'Drinking Water':part==='all'?'All':'';show(category,false);const [sub,type]=rest;if(category&&sub&&((category==='Whole-House'?wholeHouseGroups:drinkingWaterGroups).includes(sub))){showSub(sub,false);if(type&&productTypeGroups[sub]?.some(t=>t.id===type))showType(type,false)}}
@@ -264,9 +320,9 @@ $('concernsHome').addEventListener('click', () => {
 });
 $('allConcerns').addEventListener('click', () => showConcerns());
 
-window.addEventListener('popstate',()=>{restoreNavigation();britaResetScroll()});
+window.addEventListener('popstate',()=>{if(productDialog.open||new URLSearchParams(location.search).has('sku')){restoreProductDetail();return}restoreNavigation();britaResetScroll()});
 Promise.all([
  fetch('/sales-sheets/catalog.json').then(r=>{if(!r.ok)throw Error('Unable to load product resources');return r.json()}),
  fetch('https://britapro-order-portal.netlify.app/.netlify/functions/product-specifications',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Unable to load product specifications');return r.json()}).catch(e=>{console.warn(e);return {products:[]}})
-]).then(([data,specifications])=>{records=data;specificationsBySku=new Map(specifications.products.map(s=>[s.sku.toUpperCase(),s]));restoreNavigation()}).catch(e=>{document.querySelector('.intro').textContent=e.message});
+]).then(([data,specifications])=>{records=data;specificationsBySku=new Map(specifications.products.map(s=>[s.sku.toUpperCase(),s]));restoreNavigation();restoreProductDetail()}).catch(e=>{document.querySelector('.intro').textContent=e.message});
 </script></body></html>
