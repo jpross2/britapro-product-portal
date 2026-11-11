@@ -176,6 +176,7 @@ function closeCategoryMenu(focus=false){
  if(focus)$('categoryToggle').focus();
 }
 function chooseCategory(group,type=''){
+ if(!group){show('');closeCategoryMenu(true);britaResetScroll();return;}
  const query=$('search').value;
  show('All',false);$('category').value=group;menuType=type;$('search').value=query;
  render();history.pushState({menuFilter:true,group,type,query},'',location.pathname+'#all');closeCategoryMenu(true);
