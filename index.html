@@ -68,7 +68,9 @@ main>#catalogControls{margin-top:0;margin-bottom:20px}
 /* Match the compact desktop scale in the Ordering Portal reference. */
 @media(min-width:1024px){
  body{zoom:0.6666667}
- body>header{min-height:136px}
+ body>header{min-height:110px;padding-inline:max(20px,calc((150vw - 1100px)/2))}
+ main::before,main::after{width:150vw;margin-left:-75vw}
+ main:not(:has(#home[style*="none"])){--hero-h:320px}
  body>header .brand{display:inline-flex;flex-direction:column;align-items:flex-start;gap:8px}
 }
 #home>.choices{gap:22px;margin:25px 0;grid-auto-rows:1fr}
@@ -76,6 +78,7 @@ main>#catalogControls{margin-top:0;margin-bottom:20px}
 #home>.choices>.choice .home-photo-group{height:220px;flex:none;margin:0}
 #home>.choices>.choice .whole-house-photos{height:270px}
 #home>.choices>.choice .action{margin-top:auto}
+#home .concern-visual{align-items:center}
 #home .concern-visual .category-symbol{width:72px;height:72px;border-radius:18px}
 #home .concern-visual .category-symbol svg{width:42px;height:42px}
 @media(max-width:600px){
