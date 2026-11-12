@@ -462,7 +462,7 @@ function runCatalogSearch(){
  history.replaceState({menuFilter:true,group,type,query},'',location.pathname+'#all');
 }
 $('category').addEventListener('change',runCatalogSearch);
-function restoreNavigation(){const state=history.state;if(location.hash==='#all'&&state?.menuFilter){show('All',false);$('category').value=state.group||'';menuType=state.type||'';$('search').value=state.query||'';render();return}const raw=decodeURIComponent(location.hash.slice(1));const [part,...rest]=raw.split('/');if(part==='water-concerns'){showConcerns(rest[0],false);return}const category=part==='whole-house'?'Whole-House':part==='drinking-water'?'Drinking Water':part==='all'?'All':'';show(category,false);const [sub,type]=rest;if(category&&sub&&((category==='Whole-House'?wholeHouseGroups:drinkingWaterGroups).includes(sub))){showSub(sub,false);if(type&&productTypeGroups[sub]?.some(t=>t.id===type))showType(type,false)}}
+function restoreNavigation(){const state=history.state;if(location.hash==='#all'&&state?.menuFilter){show('All',false);$('category').value=state.group||'';menuType=state.type||'';$('search').value=state.query||'';render();return}const raw=decodeURIComponent(location.hash.slice(1));const [part,...rest]=raw.split('/');if(part==='water-concerns'){showConcerns(rest[0],false);return}const category=part==='whole-house'?'Whole-House':part==='drinking-water'?'Drinking Water':part==='all'?'All':'';show(category,false);const [sub,type]=rest;if(category&&sub&&((category==='Whole-House'?wholeHouseGroups:drinkingWaterGroups).includes(sub))){showSub(sub,false);if(type&&subcategoryTypes(sub).some(t=>t.id===type))showType(type,false)}}
 const waterConcerns = {
   'drinking-water-tds': {
     title: 'Drinking Water',
