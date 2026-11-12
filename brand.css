@@ -161,3 +161,19 @@ main:has(#section[style*="block"]) #productCompareBar{
     transform:translateY(-18px);
   }
 }
+
+/* Show comparison while browsing the Find by Water Concern flow as well. */
+main:has(#concerns:not([hidden])){
+  --hero-h:400px;
+}
+main:has(#concerns:not([hidden]))>#catalogControls,
+main:has(#concerns:not([hidden])) #concernCompareBar{
+  transform:translateY(-24px);
+}
+@media(max-width:600px){
+  main:has(#concerns:not([hidden])){--hero-h:440px}
+  main:has(#concerns:not([hidden]))>#catalogControls,
+  main:has(#concerns:not([hidden])) #concernCompareBar{
+    transform:translateY(-18px);
+  }
+}
