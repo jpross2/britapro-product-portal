@@ -40,10 +40,12 @@
 @media(max-width:600px){.choice .whole-house-photos{height:225px}}
 main>#catalogControls{margin-top:0;margin-bottom:20px}
 
-.public-compare-bar{position:static;display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:#fff;border:1px solid #c7dce9;border-radius:12px;padding:12px;margin:12px 0 20px;box-shadow:0 3px 12px #173f581a}
-.public-compare-bar>span{flex:1;color:#526779}
-.public-compare-actions{display:flex;gap:8px}
+.public-compare-bar{position:static;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:nowrap;min-height:46px;background:#fff;border:1px solid #c7dce9;border-radius:10px;padding:7px 10px;margin:8px 0 14px;box-shadow:0 1px 5px #173f5812}
+.public-compare-bar>strong{font-size:14px;white-space:nowrap;color:#17334b}
+.public-compare-bar>span{flex:1;min-width:0;color:#526779;font-size:13px}
+.public-compare-actions{display:flex;flex:0 0 auto;gap:6px}
 .public-compare-actions button,.public-card-comparison button,.public-comparison-table button{font:inherit;background:#fff;color:#075b96;border:1px solid #075b96;border-radius:8px;padding:9px 12px;cursor:pointer}
+.public-compare-actions button{min-height:34px;padding:5px 10px;font-size:13px;white-space:nowrap}
 .public-card-comparison{display:flex;flex-direction:column;gap:8px;width:100%;margin-top:2px}
 .public-card-comparison label{font-size:13px;display:flex;flex-direction:column;gap:4px}
 .public-card-comparison select{width:100%;min-width:0;padding:9px;border:1px solid #c9d7e1;border-radius:8px;font:inherit;background:#fff}
@@ -58,7 +60,7 @@ main>#catalogControls{margin-top:0;margin-bottom:20px}
 .public-comparison-table th{background:#edf6fb}
 .public-comparison-table th:first-child{width:180px;position:sticky;left:0;z-index:1;background:#f2f7fa}
 .public-comparison-table .detail-key-points{margin:0}
-@media(max-width:600px){.product-comparison-dialog{width:calc(100vw - 16px);padding:14px}.public-compare-actions{width:100%}.public-compare-actions button{flex:1}}
+@media(max-width:600px){.product-comparison-dialog{width:calc(100vw - 16px);padding:14px}.public-compare-bar{gap:6px;padding:7px 8px}.public-compare-bar>strong{font-size:13px}.public-compare-actions{width:auto}.public-compare-actions button{flex:0 0 auto;padding:5px 8px;font-size:12px}}
 .category-picker{position:relative;flex:1;min-width:240px}#categoryToggle{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;height:100%;min-height:49px;padding:12px;border:1px solid #cbd8e3;border-radius:10px;background:white;color:#17304b;font:inherit;text-align:left;cursor:pointer}.category-menu{position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:3;max-height:360px;overflow:auto;background:white;border:1px solid #cbd8e3;border-radius:10px;box-shadow:0 8px 24px #17304b26;padding:6px}.category-menu button{display:block;width:100%;border:0;border-radius:6px;background:white;color:#17304b;padding:11px 12px;font:inherit;text-align:left;cursor:pointer}.category-menu button:hover,.category-menu button:focus-visible{background:#eaf3f9;outline:2px solid #0b6da5;outline-offset:-2px}.category-menu .category-menu-heading{padding:9px 12px;font-weight:750;color:#0b6497}.category-menu .category-menu-back{border-bottom:1px solid #dce6ed;border-radius:0;color:#0b6497}[hidden]{display:none!important}@media(max-width:600px){.category-picker{min-width:100%}}
 
 #search{flex:2;max-width:none;min-width:180px}
@@ -270,11 +272,17 @@ function nextComparisonSelection(selected,sku){
 function updateProductComparison(){
  const bar=document.getElementById('productCompareBar');
  bar.replaceChildren();
+ const hasSelection=comparisonSkus.length>0;
+ bar.classList.toggle('has-selection',hasSelection);
  const title=document.createElement('strong');title.textContent='Compare Products ('+comparisonSkus.length+'/3)';bar.append(title);
- const note=document.createElement('span');note.textContent=comparisonNotice||'Select Compare on up to three product cards.';bar.append(note);
- const actions=document.createElement('div');actions.className='public-compare-actions';
- const open=document.createElement('button');open.type='button';open.textContent='Compare ('+comparisonSkus.length+')';open.disabled=!comparisonSkus.length;open.addEventListener('click',showProductComparison);actions.append(open);
- const clear=document.createElement('button');clear.type='button';clear.textContent='Clear';clear.disabled=!comparisonSkus.length;clear.addEventListener('click',()=>{comparisonSkus.length=0;comparisonNotice='';updateProductComparison();if(comparisonDialog.open)comparisonDialog.close()});actions.append(clear);bar.append(actions);
+ if(!hasSelection||comparisonNotice){
+  const note=document.createElement('span');note.className='public-compare-note';note.textContent=comparisonNotice||'Select products to compare.';bar.append(note);
+ }
+ if(hasSelection){
+  const actions=document.createElement('div');actions.className='public-compare-actions';
+  const open=document.createElement('button');open.type='button';open.textContent='Compare';open.disabled=comparisonSkus.length<2;open.addEventListener('click',showProductComparison);actions.append(open);
+  const clear=document.createElement('button');clear.type='button';clear.textContent='Clear';clear.addEventListener('click',()=>{comparisonSkus.length=0;comparisonNotice='';updateProductComparison();if(comparisonDialog.open)comparisonDialog.close()});actions.append(clear);bar.append(actions);
+ }
  document.querySelectorAll('[data-compare-sku]').forEach(button=>{
   const sku=button.dataset.compareSku,selected=comparisonSkus.includes(sku),available=specificationsBySku.has(sku);
   button.textContent=selected?'Selected for comparison':'Compare Product';
