@@ -490,13 +490,15 @@
     "sku": "BP5WRX.259.120",
     "name": "BritaPRO Filter For Tankless Reverse Osmosis",
     "category": "Drinking Water",
-    "subcategory": "Reverse Osmosis (RO)"
+    "subcategory": "Reverse Osmosis (RO)",
+    "imagePath": "product-images/Tankless_RO_Carbon_Filter.png"
   },
   {
     "sku": "BP5WRX.259.119",
     "name": "BritaPRO Dow Membrane For Tankless Reverse Osmosis",
     "category": "Drinking Water",
-    "subcategory": "Reverse Osmosis (RO)"
+    "subcategory": "Reverse Osmosis (RO)",
+    "imagePath": "product-images/Tankless_RO_Membrane.png"
   },
   {
     "sku": "BPUSF4001",
