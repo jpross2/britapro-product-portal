@@ -374,10 +374,10 @@ function warrantyForProduct(record){
  if(['Water Softeners','Backwashing Filters','Mid-Plates','Non-Backwashing Filters (NRV)','Other Whole-House Products'].includes(subcategory))return WARRANTY_FORMS.wholeHouse;
  return null;
 }
-function openProductDetail(sku,push=false){
+const MEDIA_VOLUME_GROUPS=['Water Softeners','Backwashing Filters','Mid-Plates','Non-Backwashing Filters (NRV)'];function openProductDetail(sku,push=false){
  const id=String(sku).trim().toUpperCase();
  let record=records.find(r=>(r.skus?.length?r.skus:[r.sku||r.SKU||r.imageSku].filter(Boolean)).some(v=>String(v).toUpperCase()===id));
- if(record?.variants)record=record.variants.find(v=>v.skus?.some(s=>s.toUpperCase()===id))||record;
+ const mvGroup=record?.subcategory;if(record?.variants)record=record.variants.find(v=>v.skus?.some(s=>s.toUpperCase()===id))||record;
  const spec=specificationsBySku.get(id);
  if(!productDialog.open)detailReturnFocus=document.activeElement;
  const body=document.createElement('div');
@@ -388,7 +388,7 @@ function openProductDetail(sku,push=false){
  if(spec){
   if(spec.subtitle==='Filters not Included'){const note=document.createElement('p');note.textContent=spec.subtitle;body.append(note)}
   if(spec.purpose){const purpose=document.createElement('p');purpose.textContent=spec.purpose;body.append(purpose)}
-  const points=String(spec.description||'').split(/[•\r\n]+/).map(v=>v.trim()).filter(Boolean);
+  const points=String(spec.description||'').split(/[•\r\n]+/).map(v=>v.trim()).filter(Boolean).filter(v=>MEDIA_VOLUME_GROUPS.includes(mvGroup)||!/^media volume\s*:/i.test(v));
   for(const [value,label] of [[spec.tankDimensions,'Tank dimensions'],[spec.operation,'Operation']]){
    if(value&&!points.some(point=>point.toLowerCase().replace(/[^a-z0-9]/g,'').includes(value.toLowerCase().replace(/[^a-z0-9]/g,''))))points.push(label+': '+value);
   }
