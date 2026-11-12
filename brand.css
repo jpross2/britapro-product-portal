@@ -148,3 +148,16 @@ input:focus,#catalogControls select:focus,#categoryToggle:focus-visible,.public-
   .choice,.card,.back,.detail-resources a,input,.public-compare-actions button,.public-card-comparison button{transition:none}
   .choice:hover,.choice:focus-visible,.detail-resources a:hover{transform:none}
 }
+
+/* Keep the Product Portal search and comparison controls within the blue hero band. */
+main:has(#section[style*="block"])>#catalogControls,
+main:has(#section[style*="block"]) #productCompareBar{
+  transform:translateY(-24px);
+}
+@media(max-width:600px){
+  main:has(#section[style*="block"]){--hero-h:230px}
+  main:has(#section[style*="block"])>#catalogControls,
+  main:has(#section[style*="block"]) #productCompareBar{
+    transform:translateY(-18px);
+  }
+}
