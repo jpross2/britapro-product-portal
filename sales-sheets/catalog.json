@@ -502,49 +502,65 @@
     "sku": "BPUSF4001",
     "name": "BritaPRO 10” Sediment Carbon Filtration Filter Replacement- Individual",
     "category": "Drinking Water",
-    "subcategory": "Single Stage Filters"
+    "subcategory": "Single Stage Filters",
+    "imagePath": "product-images/BP_SingleStage_10in_CTO.png",
+    "imageNote": "System shown"
   },
   {
     "sku": "BPUSF4003",
     "name": "BritaPRO 14” Lead, Voc With Anti-Microbial Filter Replacement- Individual",
     "category": "Drinking Water",
-    "subcategory": "Single Stage Filters"
+    "subcategory": "Single Stage Filters",
+    "imagePath": "product-images/BP_SingleStage_14in_Lead.png",
+    "imageNote": "System shown"
   },
   {
     "sku": "BPUSF4004",
     "name": "BritaPRO 14” Pfas And Pharma With Anti-Microbial Filter Replacement- Individual",
     "category": "Drinking Water",
-    "subcategory": "Single Stage Filters"
+    "subcategory": "Single Stage Filters",
+    "imagePath": "product-images/BP_SingleStage_14in_PFAS.png",
+    "imageNote": "System shown"
   },
   {
     "sku": "BPUSF4005",
     "name": "BritaPRO Quick-Twist Microbiological Purifier Filter Replacement- Individual",
     "category": "Drinking Water",
-    "subcategory": "Single Stage Filters"
+    "subcategory": "Single Stage Filters",
+    "imagePath": "product-images/BP_SingleStage_Microbiological.png",
+    "imageNote": "System shown"
   },
   {
     "sku": "BPUSF4001CA",
     "name": "BritaPRO 10” Sediment Carbon Filtration Filter Replacement- Case Of 12",
     "category": "Drinking Water",
-    "subcategory": "Single Stage Filters"
+    "subcategory": "Single Stage Filters",
+    "imagePath": "product-images/BP_SingleStage_10in_CTO.png",
+    "imageNote": "System shown"
   },
   {
     "sku": "BPUSF4003CA",
     "name": "BritaPRO 14” Lead, Voc With Anti-Microbial Filter Replacement- Case Of 12",
     "category": "Drinking Water",
-    "subcategory": "Single Stage Filters"
+    "subcategory": "Single Stage Filters",
+    "imagePath": "product-images/BP_SingleStage_14in_Lead.png",
+    "imageNote": "System shown"
   },
   {
     "sku": "BPUSF4004CA",
     "name": "BritaPRO 14” Pfas And Pharma With Anti-Microbial Filter Replacement- Case Of 12",
     "category": "Drinking Water",
-    "subcategory": "Single Stage Filters"
+    "subcategory": "Single Stage Filters",
+    "imagePath": "product-images/BP_SingleStage_14in_PFAS.png",
+    "imageNote": "System shown"
   },
   {
     "sku": "BPUSF4005CA",
     "name": "BritaPRO Quick-Twist Microbiological Purifier Filter Replacement- Case Of 6",
     "category": "Drinking Water",
-    "subcategory": "Single Stage Filters"
+    "subcategory": "Single Stage Filters",
+    "imagePath": "product-images/BP_SingleStage_Microbiological.png",
+    "imageNote": "System shown"
   },
   {
     "sku": "BPWHF8001",
@@ -581,5 +597,48 @@
     "name": "BritaPRO Chloramine Plus Filter Whole House Filters - 20\" Drop In Heavy Duty",
     "category": "Whole-House",
     "subcategory": "Titanium LT"
+  },
+  {
+    "sku": "BPT50NL38-NF",
+    "name": "BritaPRO Twist Reverse Osmosis System 75Gpd,3/8 Connection, No Faucet/Tank",
+    "category": "Drinking Water",
+    "subcategory": "Reverse Osmosis (RO)",
+    "imagePath": "product-images/BP_RO_4Stage_QuickTwist.png"
+  },
+  {
+    "sku": "BPT50-SED5",
+    "name": "BritaPRO Pre Sediment Filter For Quick-Twist Reverse Osmosis",
+    "category": "Drinking Water",
+    "subcategory": "Reverse Osmosis (RO)"
+  },
+  {
+    "sku": "BPT50-CB5",
+    "name": "BritaPRO Pre Carbon Filter For Quick-Twist Reverse Osmosis",
+    "category": "Drinking Water",
+    "subcategory": "Reverse Osmosis (RO)"
+  },
+  {
+    "sku": "BPT50-TW50",
+    "name": "BritaPRO Reverse Osmosis Membrane For Quick-Twist Reverse Osmosis",
+    "category": "Drinking Water",
+    "subcategory": "Reverse Osmosis (RO)"
+  },
+  {
+    "sku": "BPT50-CB5P",
+    "name": "BritaPRO Post Carbon Block Filter For Quick-Twist Reverse Osmosis",
+    "category": "Drinking Water",
+    "subcategory": "Reverse Osmosis (RO)"
+  },
+  {
+    "sku": "BPT50-ALK",
+    "name": "BritaPRO Alkaline Filter For Quick-Twist Reverse Osmosis",
+    "category": "Drinking Water",
+    "subcategory": "Reverse Osmosis (RO)"
+  },
+  {
+    "sku": "BPS1089-08",
+    "name": "BritaPRO Reverse Osmosis Faucet Without Monitor",
+    "category": "Drinking Water",
+    "subcategory": "Reverse Osmosis (RO)"
   }
 ]
