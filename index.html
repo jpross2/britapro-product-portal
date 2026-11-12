@@ -78,6 +78,7 @@ main>#catalogControls{margin-top:0;margin-bottom:20px}
   <span class="action">Explore applications →</span>
 </button></div>
 <section id="concerns" hidden>
+  <div id="concernCompareBar" class="public-compare-bar" aria-live="polite"></div>
   <div id="concernList">
     <button class="back" type="button" id="concernsHome">← All product categories</button>
     <h1 id="concernHeading" tabindex="-1">Find by Water Concern</h1>
@@ -270,19 +271,21 @@ function nextComparisonSelection(selected,sku){
  return {skus:[...selected,id],notice:''};
 }
 function updateProductComparison(){
- const bar=document.getElementById('productCompareBar');
- bar.replaceChildren();
+ const bars=[...document.querySelectorAll('.public-compare-bar')];
  const hasSelection=comparisonSkus.length>0;
- bar.classList.toggle('has-selection',hasSelection);
- const title=document.createElement('strong');title.textContent='Compare Products ('+comparisonSkus.length+'/3)';bar.append(title);
- if(!hasSelection||comparisonNotice){
-  const note=document.createElement('span');note.className='public-compare-note';note.textContent=comparisonNotice||'Select products to compare.';bar.append(note);
- }
- if(hasSelection){
-  const actions=document.createElement('div');actions.className='public-compare-actions';
-  const open=document.createElement('button');open.type='button';open.textContent='Compare';open.disabled=comparisonSkus.length<2;open.addEventListener('click',showProductComparison);actions.append(open);
-  const clear=document.createElement('button');clear.type='button';clear.textContent='Clear';clear.addEventListener('click',()=>{comparisonSkus.length=0;comparisonNotice='';updateProductComparison();if(comparisonDialog.open)comparisonDialog.close()});actions.append(clear);bar.append(actions);
- }
+ bars.forEach(bar=>{
+  bar.replaceChildren();
+  bar.classList.toggle('has-selection',hasSelection);
+  const title=document.createElement('strong');title.textContent='Compare Products ('+comparisonSkus.length+'/3)';bar.append(title);
+  if(!hasSelection||comparisonNotice){
+   const note=document.createElement('span');note.className='public-compare-note';note.textContent=comparisonNotice||'Select products to compare.';bar.append(note);
+  }
+  if(hasSelection){
+   const actions=document.createElement('div');actions.className='public-compare-actions';
+   const open=document.createElement('button');open.type='button';open.textContent='Compare';open.disabled=comparisonSkus.length<2;open.addEventListener('click',showProductComparison);actions.append(open);
+   const clear=document.createElement('button');clear.type='button';clear.textContent='Clear';clear.addEventListener('click',()=>{comparisonSkus.length=0;comparisonNotice='';updateProductComparison();if(comparisonDialog.open)comparisonDialog.close()});actions.append(clear);bar.append(actions);
+  }
+ });
  document.querySelectorAll('[data-compare-sku]').forEach(button=>{
   const sku=button.dataset.compareSku,selected=comparisonSkus.includes(sku),available=specificationsBySku.has(sku);
   button.textContent=selected?'Selected for comparison':'Compare Product';
