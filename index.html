@@ -65,16 +65,24 @@ main>#catalogControls{margin-top:0;margin-bottom:20px}
 
 #search{flex:2;max-width:none;min-width:180px}
 </style><link rel="stylesheet" href="/brand.css?v=20261111"><meta name="theme-color" content="#041a2f"><script>if('scrollRestoration' in history)history.scrollRestoration='manual';function britaResetScroll(){window.scrollTo(0,0);requestAnimationFrame(()=>window.scrollTo(0,0))}window.addEventListener('pageshow',britaResetScroll);window.addEventListener('load',britaResetScroll);</script><style>
+/* Match the compact desktop scale in the Ordering Portal reference. */
+@media(min-width:1024px){
+ body{zoom:0.6666667}
+ body>header{min-height:136px}
+ body>header .brand{display:inline-flex;flex-direction:column;align-items:flex-start;gap:8px}
+}
 #home>.choices{gap:22px;margin:25px 0;grid-auto-rows:1fr}
 #home>.choices>.choice{width:100%;min-width:0;min-height:0;margin:0;padding:29px;gap:10px}
-#home>.choices>.choice .home-photo-group{height:270px;flex:none;margin:0}
+#home>.choices>.choice .home-photo-group{height:220px;flex:none;margin:0}
+#home>.choices>.choice .whole-house-photos{height:270px}
 #home>.choices>.choice .action{margin-top:auto}
 #home .concern-visual .category-symbol{width:72px;height:72px;border-radius:18px}
 #home .concern-visual .category-symbol svg{width:42px;height:42px}
 @media(max-width:600px){
  #home>.choices{gap:16px}
  #home>.choices>.choice{padding:22px}
- #home>.choices>.choice .home-photo-group{height:225px}
+ #home>.choices>.choice .home-photo-group{height:185px}
+ #home>.choices>.choice .whole-house-photos{height:225px}
 }
 </style></head><body>
 <header><a class="brand" href="https://britapro-partner-portal.netlify.app/" aria-label="Return to BritaPRO Partner Portal"><img class="brand-logo" src="/britapro-logo.svg" alt="BritaPRO" width="188" height="28"><small>PRODUCT PORTAL</small></a></header>
