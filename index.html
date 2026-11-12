@@ -386,12 +386,11 @@ const MEDIA_VOLUME_GROUPS=['Water Softeners','Backwashing Filters','Mid-Plates',
  const title=document.createElement('h2');title.id='productDetailTitle';title.textContent=spec?.name||record?.name||id;body.append(title);
  const code=document.createElement('p');code.className='detail-sku';code.textContent=id;body.append(code);
  if(spec){
-  if(spec.subtitle==='Filters not Included'){const note=document.createElement('p');note.textContent=spec.subtitle;body.append(note)}
+  if(spec.subtitle){const subtitle=document.createElement('p');subtitle.className='detail-subtitle';subtitle.textContent=spec.subtitle;body.append(subtitle)}
   if(spec.purpose){const purpose=document.createElement('p');purpose.textContent=spec.purpose;body.append(purpose)}
   const points=String(spec.description||'').split(/[•\r\n]+/).map(v=>v.trim()).filter(Boolean).filter(v=>MEDIA_VOLUME_GROUPS.includes(mvGroup)||!/^media volume\s*:/i.test(v));
-  for(const [value,label] of [[spec.tankDimensions,'Tank dimensions'],[spec.operation,'Operation']]){
-   if(value&&!points.some(point=>point.toLowerCase().replace(/[^a-z0-9]/g,'').includes(value.toLowerCase().replace(/[^a-z0-9]/g,''))))points.push(label+': '+value);
-  }
+  if(spec.tankDimensions&&!points.some(point=>point.toLowerCase().replace(/[^a-z0-9]/g,'').includes(spec.tankDimensions.toLowerCase().replace(/[^a-z0-9]/g,''))))points.push('Tank dimensions: '+spec.tankDimensions);
+  if(spec.operation&&!(spec.subtitle||'').toLowerCase().includes(spec.operation.toLowerCase())&&!points.some(point=>point.toLowerCase().replace(/[^a-z0-9]/g,'').includes(spec.operation.toLowerCase().replace(/[^a-z0-9]/g,''))))points.push('Operation: '+spec.operation);
   if(points.length){const list=document.createElement('ul');list.className='detail-key-points';for(const point of points){const li=document.createElement('li');li.textContent=point;list.append(li)}body.append(list)}
  }else{const note=document.createElement('p');note.textContent='Product specifications are currently unavailable.';note.setAttribute('role','status');body.append(note)}
  if(record){
