@@ -125,8 +125,8 @@ main>#catalogControls{margin-top:0;margin-bottom:20px}
 </main><script>
 const $=id=>document.getElementById(id);let records=[],selected='',selectedSub='',selectedType='';
 const ORDERING_PORTAL_URL='https://britapro-order-portal.netlify.app/';
-function orderingDescriptionUrl(sku){const url=new URL(ORDERING_PORTAL_URL);url.searchParams.set('sku',sku);url.searchParams.set('view','description');return url.toString()}const wholeHouseGroups=['Water Softeners','Backwashing Filters','Mid-Plates','Non-Backwashing Filters (NRV)','Specialty Filters','Titanium LT','UV Systems','Other Whole-House Products'];
-const categoryPhotoNames={'Titanium LT':'TitaniumLT 3 Stage GREY','Backwashing Filters':'Platinum Valve Catalytic Carbon','Non-Backwashing Filters (NRV)':'Non-backwashing Catalytic Carbon','Specialty Filters':'Platinum Valve PFAS','Water Softeners':'Softener','Mid-Plates':'Softener Carbon Mid-Plate','UV Systems':'UV','Other Whole-House Products':'Leak Detection','Reverse Osmosis (RO)':'RO Tankless','Single Stage Filters':'SingleStage 14in PFAS'};
+function orderingDescriptionUrl(sku){const url=new URL(ORDERING_PORTAL_URL);url.searchParams.set('sku',sku);url.searchParams.set('view','description');return url.toString()}const wholeHouseGroups=['Water Softeners','Mixed-Bed Systems','Backwashing Filters','Mid-Plates','Non-Backwashing Filters (NRV)','Specialty Filters','Titanium LT','UV Systems','Other Whole-House Products'];
+const categoryPhotoNames={'Titanium LT':'TitaniumLT 3 Stage GREY','Backwashing Filters':'Platinum Valve Catalytic Carbon','Non-Backwashing Filters (NRV)':'Non-backwashing Catalytic Carbon','Specialty Filters':'Platinum Valve PFAS','Water Softeners':'Softener','Mixed-Bed Systems':'BritaPRO Platinum Softener + Catalytic Carbon Filter — Mixed Bed','Mid-Plates':'Softener Carbon Mid-Plate','UV Systems':'UV','Other Whole-House Products':'Leak Detection','Reverse Osmosis (RO)':'RO Tankless','Single Stage Filters':'SingleStage 14in PFAS'};
 const drinkingWaterGroups=['Reverse Osmosis (RO)','Single Stage Filters'];const names={'Whole-House':'Whole-House Systems','Drinking Water':'Drinking Water Systems'};const productTypeGroups={
  'Water Softeners':[
   {id:'traditional-softeners',title:'Traditional Softeners',detail:'Water softening',record:'Softener'},
@@ -417,6 +417,7 @@ productDialog.addEventListener('click',e=>{if(e.target===productDialog){const b=
 const WARRANTY_FORMS={
  wholeHouse:{path:'https://britapro-support-portal.netlify.app/warranty/BritaPRO_Platinum_Series_10_Year_Fillable_Warranty.pdf',formLabel:'10-Year Whole-House'},
  softIron:{path:'https://britapro-support-portal.netlify.app/warranty/BritaPRO_Platinum_Series_Soft_Iron_Fillable_Warranty.pdf',formLabel:'Soft Iron'},
+ softMixedBed:{path:'https://britapro-support-portal.netlify.app/warranty/BritaPRO_Platinum_Series_Soft_Mixed_Bed_Fillable_Warranty.pdf',formLabel:'Soft Mixed Bed'},
  titanium:{path:'https://britapro-support-portal.netlify.app/warranty/BritaPRO_Platinum_Series_Titanium_LT_4x20_Fillable_Warranty.pdf',formLabel:'Titanium LT 4×20'},
  uv:{path:'https://britapro-support-portal.netlify.app/warranty/BritaPRO_Platinum_Series_Ultraviolet_Fillable_Warranty.pdf',formLabel:'Ultraviolet (UV)'},
  ro:{path:'https://britapro-support-portal.netlify.app/warranty/BritaPRO_Platinum_Series_RO_Fillable_Warranty.pdf',formLabel:'Reverse Osmosis (RO)'},
@@ -428,6 +429,7 @@ function warrantyForProduct(record){
  const name=String(record.name||'');
  const subcategory=String(record.subcategory||'');
  if(name==='Softener with Iron Reduction')return WARRANTY_FORMS.softIron;
+ if(subcategory==='Mixed-Bed Systems')return WARRANTY_FORMS.softMixedBed;
  if(subcategory==='Titanium LT')return WARRANTY_FORMS.titanium;
  if(subcategory==='UV Systems')return WARRANTY_FORMS.uv;
  if(subcategory==='Reverse Osmosis (RO)')return /tankless/i.test(name)?WARRANTY_FORMS.tankless:WARRANTY_FORMS.ro;
@@ -504,14 +506,14 @@ const waterConcerns = {
     observation: 'White scale on fixtures or spots on dishes.',
     confirm: 'Measure hardness in grains per gallon and confirm whether the customer wants softened water throughout the home.',
     match: 'Start with the standard softener for hardness removal. The Carbon Mid-Plate can address multiple concerns where supported; NRV anti-scale is a scale-prevention alternative, not a softener.',
-    products: ['Softener', 'Softener Carbon Mid-Plate', 'Non-backwashing Anti-scale']
+    products: ['Softener', 'Softener Carbon Mid-Plate', 'BritaPRO Platinum Softener + Catalytic Carbon Filter — Mixed Bed', 'Non-backwashing Anti-scale']
   },
   disinfectant: {
     title: 'Chlorine / Chloramine',
     observation: 'A pool-like smell or objectionable taste at the tap.',
     confirm: 'Ask the utility which disinfectant it uses and check the residual with the appropriate test. Ask whether the concern is at the drinking tap or throughout the house.',
     match: 'Compare drinking-water carbon and whole-house catalytic carbon options. Verify the exact model’s claim for the measured disinfectant, especially for chloramine.',
-    products: ['SingleStage 10in Carbon', 'Non-backwashing Catalytic Carbon', 'Platinum Valve Catalytic Carbon', 'Softener Carbon Mid-Plate']
+    products: ['SingleStage 10in Carbon', 'Non-backwashing Catalytic Carbon', 'Platinum Valve Catalytic Carbon', 'Softener Carbon Mid-Plate', 'BritaPRO Platinum Softener + Catalytic Carbon Filter — Mixed Bed']
   },
   pfas: {
     title: 'PFAS',
@@ -626,5 +628,5 @@ window.addEventListener('popstate',()=>{if(productDialog.open||new URLSearchPara
 Promise.all([
  fetch('/sales-sheets/catalog.json').then(r=>{if(!r.ok)throw Error('Unable to load product resources');return r.json()}),
  fetch('https://britapro-order-portal.netlify.app/.netlify/functions/product-specifications',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Unable to load product specifications');return r.json()}).catch(e=>{console.warn(e);return {products:[]}})
-]).then(([data,specifications])=>{records=data;for(const category of ["Water Softeners","Backwashing Filters","Mid-Plates","Non-Backwashing Filters (NRV)","Titanium LT","Reverse Osmosis (RO)","Single Stage Filters","UV Systems","Other Whole-House Products","Parts & Accessories"]){const option=document.createElement('option');option.value=category;option.textContent=category==='Mid-Plates'?'Filter Softener Mid-Plates':category==='Parts & Accessories'?'Parts and Accessories':category;$('category').append(option)}specificationsBySku=new Map(specifications.products.map(s=>[s.sku.toUpperCase(),s]));restoreNavigation();restoreProductDetail();updateProductComparison()}).catch(e=>{document.querySelector('.intro').textContent=e.message});
+]).then(([data,specifications])=>{records=data;for(const category of ["Water Softeners","Mixed-Bed Systems","Backwashing Filters","Mid-Plates","Non-Backwashing Filters (NRV)","Titanium LT","Reverse Osmosis (RO)","Single Stage Filters","UV Systems","Other Whole-House Products","Parts & Accessories"]){const option=document.createElement('option');option.value=category;option.textContent=category==='Mid-Plates'?'Filter Softener Mid-Plates':category==='Parts & Accessories'?'Parts and Accessories':category;$('category').append(option)}specificationsBySku=new Map(specifications.products.map(s=>[s.sku.toUpperCase(),s]));restoreNavigation();restoreProductDetail();updateProductComparison()}).catch(e=>{document.querySelector('.intro').textContent=e.message});
 </script></body></html>
