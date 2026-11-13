@@ -37,6 +37,12 @@
       "BPNRVCAT100J",
       "BPNRVCAT150J"
     ],
+    "guidePaths": [
+      {
+        "label": "Carbon Filtration Soaking Procedure",
+        "path": "BP_Carbon Filtration Soaking Procedure.pdf"
+      }
+    ],
     "manualPath": "manuals/whole-house/Platinum_NRV_Manual.DIGITAL.pdf",
     "brochurePath": "sales-sheets/whole-house/BP_Filtration_Brochure.DIGITAL.pdf"
   },
