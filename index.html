@@ -361,6 +361,7 @@ function appendComparisonControls(box,skus){
  button.addEventListener('click',()=>toggleProductComparison(button.dataset.compareSku));refresh();controls.append(button);box.append(controls);
 }
 function isComparisonPlaceholder(value){const text=String(value??'').trim();return !text||/^(?:n\/?a|not\s+(?:applicable|specified|available|confirmed|provided|listed|determined|known)|unknown|unavailable|pending(?:\s+confirmation)?|see\s+original\s+specification)(?:\b|[\s—–,;:.(-]|\/)/i.test(text)}
+function repeatsTankDimensions(line,tankDimensions){const dimensions=String(tankDimensions??'').match(/\d+(?:\.\d+)?\s*(?:in(?:ches)?|")?\s*[x×]\s*\d+(?:\.\d+)?\s*(?:in(?:ches)?|")?/i);if(!dimensions||!/\btank\b/i.test(line))return false;const key=dimensions[0].toLowerCase().replace(/[^a-z0-9]/g,'');return String(line).toLowerCase().replace(/[^a-z0-9]/g,'').includes(key)}
 function comparisonDisplayValue(value){return isComparisonPlaceholder(value)?'':String(value??'').trim()}
 function comparisonDisplayValue(value){return isComparisonPlaceholder(value)?'':String(value??'').trim()}
 function showProductComparison(){
@@ -386,7 +387,7 @@ function showProductComparison(){
   for(const spec of entries){
    const cell=document.createElement('td'),value=spec[key];
    if(key==='description'){
-    const points=String(value??'').split(/[•\r\n]+/).map(line=>line.trim()).filter(line=>line&&!isComparisonPlaceholder(line));
+    const points=String(value??'').split(/[•\r\n]+/).map(line=>line.trim()).filter(line=>line&&!isComparisonPlaceholder(line)&&!repeatsTankDimensions(line,spec.tankDimensions));
     if(points.length){const list=document.createElement('ul');list.className='detail-key-points';points.forEach(point=>{const li=document.createElement('li');li.textContent=point;list.append(li)});cell.append(list)}
    }else cell.textContent=comparisonDisplayValue(value);
    row.append(cell);
