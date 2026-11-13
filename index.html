@@ -360,7 +360,7 @@ function appendComparisonControls(box,skus){
  }
  button.addEventListener('click',()=>toggleProductComparison(button.dataset.compareSku));refresh();controls.append(button);box.append(controls);
 }
-function isComparisonPlaceholder(value){const text=String(value??'').trim();return !text||/^(?:n\\/?a|not\\s+(?:applicable|specified|available|confirmed|provided|listed|determined|known)|unknown|unavailable|pending(?:\\s+confirmation)?|see\\s+original\\s+specification)(?:\\b|[\\s—–,;:/(.-])/i.test(text)}
+function isComparisonPlaceholder(value){const text=String(value??'').trim();return !text||/^(?:n\/?a|not\s+(?:applicable|specified|available|confirmed|provided|listed|determined|known)|unknown|unavailable|pending(?:\s+confirmation)?|see\s+original\s+specification)(?:\b|[\s—–,;:/(.-])/i.test(text)}
 function comparisonDisplayValue(value){return isComparisonPlaceholder(value)?'':String(value??'').trim()}
 function showProductComparison(){
  const entries=comparisonSkus.map(sku=>specificationsBySku.get(sku)).filter(Boolean);
