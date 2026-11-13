@@ -360,6 +360,8 @@ function appendComparisonControls(box,skus){
  }
  button.addEventListener('click',()=>toggleProductComparison(button.dataset.compareSku));refresh();controls.append(button);box.append(controls);
 }
+function isComparisonPlaceholder(value){const text=String(value??'').trim();return !text||/^(?:n\\/?a|not\\s+(?:applicable|specified|available|confirmed|provided|listed|determined|known)|unknown|unavailable|pending(?:\\s+confirmation)?|see\\s+original\\s+specification)(?:\\b|[\\s—–,;:/(.-])/i.test(text)}
+function comparisonDisplayValue(value){return isComparisonPlaceholder(value)?'':String(value??'').trim()}
 function showProductComparison(){
  const entries=comparisonSkus.map(sku=>specificationsBySku.get(sku)).filter(Boolean);
  if(!entries.length){if(comparisonDialog.open)comparisonDialog.close();return}
@@ -381,11 +383,11 @@ function showProductComparison(){
  for(const [label,key] of fields){
   const row=document.createElement('tr'),heading=document.createElement('th');heading.scope='row';heading.textContent=label;row.append(heading);
   for(const spec of entries){
-   const cell=document.createElement('td'),value=spec[key]||'';
-   if(key==='description'&&value){
-    const list=document.createElement('ul');list.className='detail-key-points';
-    value.split(/[•\r\n]+/).map(line=>line.trim()).filter(Boolean).forEach(point=>{const li=document.createElement('li');li.textContent=point;list.append(li)});cell.append(list);
-   }else cell.textContent=value||'Not specified';
+   const cell=document.createElement('td'),value=spec[key];
+   if(key==='description'){
+    const points=String(value??'').split(/[•\r\n]+/).map(line=>line.trim()).filter(line=>line&&!isComparisonPlaceholder(line));
+    if(points.length){const list=document.createElement('ul');list.className='detail-key-points';points.forEach(point=>{const li=document.createElement('li');li.textContent=point;list.append(li)});cell.append(list)}
+   }else cell.textContent=comparisonDisplayValue(value);
    row.append(cell);
   }
   tbody.append(row);
