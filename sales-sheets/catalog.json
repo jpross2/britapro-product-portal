@@ -347,6 +347,29 @@
     "brochurePath": "sales-sheets/whole-house/BP_Softener_Brochure.DIGITAL.pdf"
   },
   {
+    "name": "BritaPRO Platinum Softener + Catalytic Carbon Filter — Mixed Bed",
+    "category": "Whole-House",
+    "path": "sales-sheets/whole-house/BP_Softener_CTO_MixedBed.SalesSheet.DIGITAL.pdf",
+    "techPath": "tech-sheets/whole-house/BP_Softener_CTO_Mixed Bed_TechSheet.DIGITAL.pdf",
+    "subcategory": "Mixed-Bed Systems",
+    "imageSku": "BPCS150J",
+    "imagePath": "product-images/BP_Softener_CTO_MixedBed.png",
+    "skus": [
+      "BPCS100J",
+      "BPCS150J",
+      "BPCS200",
+      "BPCSK150SOLAR"
+    ],
+    "skuLabels": {
+      "BPCS100J": "Model 100",
+      "BPCS150J": "Model 150",
+      "BPCS200": "Model 200",
+      "BPCSK150SOLAR": "Model 150 Solar Valve"
+    },
+    "manualPath": "manuals/whole-house/Platinum_Softener_CTO_Manual.DIGITAL.pdf",
+    "brochurePath": "sales-sheets/whole-house/BP_Softener_Brochure.DIGITAL.pdf"
+  },
+  {
     "name": "Softener with Iron Reduction",
     "category": "Whole-House",
     "path": "sales-sheets/whole-house/BP_Softener_Iron.SalesSheet.DIGITAL.pdf",
