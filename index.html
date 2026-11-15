@@ -458,9 +458,9 @@ const MEDIA_VOLUME_GROUPS=['Water Softeners','Backwashing Filters','Mid-Plates',
  const close=document.createElement('button');close.type='button';close.className='detail-close';close.textContent='Close ×';close.addEventListener('click',closeProductDetail);body.append(close);
  const locatorImageData=window.BRITAPRO_PART_LOCATOR_IMAGES;
  const locatorPhoto=locatorImageData?.photos?.[id]||(locatorImageData?.localOrderPhotos?.includes(id)?locatorImageData.orderBase+encodeURIComponent(id)+'.webp':'');
- if(record?.imagePath||locatorPhoto){
+ if(locatorPhoto||record?.imagePath){
   const img=document.createElement('img');img.className='detail-product-image';img.alt=spec?.name||record?.name||id;
-  img.src=record?.imagePath?'/'+record.imagePath.split('/').map(encodeURIComponent).join('/'):locatorPhoto;
+  img.src=locatorPhoto||'/'+record.imagePath.split('/').map(encodeURIComponent).join('/');
   img.addEventListener('error',()=>{const placeholder=document.createElement('div');placeholder.className='detail-product-image-placeholder';placeholder.textContent='Image unavailable';img.replaceWith(placeholder)});body.append(img)
  }else if(locatorImageData?.locatorSkus?.includes(id)){
   const placeholder=document.createElement('div');placeholder.className='detail-product-image-placeholder';placeholder.textContent='Product photo needed for '+id;body.append(placeholder)
