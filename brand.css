@@ -177,3 +177,102 @@ main:has(#concerns:not([hidden])) #concernCompareBar{
     transform:translateY(-18px);
   }
 }
+
+/* BritaPRO brand-alignment pass: approved palette and accessible UI colors. */
+:root{
+  --navy-950:#003865;
+  --navy-900:#003865;
+  --navy-800:#0076A8;
+  --blue-700:#003865;
+  --blue-600:#0076A8;
+  --blue-500:#0076A8;
+  --sky-400:#0076A8;
+  --ink:#003865;
+  --muted:#425563;
+  --line:#425563;
+  --surface:#FFFFFF;
+  --page:#FFFFFF;
+  --brand-font:"Neue Haas Grotesk Display","Neue Haas Grotesk",Arial,sans-serif;
+}
+html,body,input,select,textarea,button{
+  font-family:var(--brand-font);
+}
+body{color:#003865;background:#FFFFFF}
+h1{font-family:var(--brand-font);font-weight:900}
+h2,h3,h4{font-family:var(--brand-font);font-weight:600}
+h1::before{background:#0076A8}
+a{color:#0076A8}
+:focus-visible{outline:3px solid #0076A8!important;outline-offset:3px}
+input,select,textarea{
+  background:#FFFFFF;
+  color:#003865;
+  border-color:#425563;
+}
+input::placeholder,textarea::placeholder{color:#425563}
+input:focus,select:focus,textarea:focus,
+#categoryToggle:focus-visible{
+  outline:3px solid #0076A8!important;
+  border-color:#0076A8!important;
+  box-shadow:0 0 0 3px rgba(0,118,168,.22)!important;
+}
+header,.top,footer,.head{background-color:#003865!important}
+header .brand small,.brand small,.head p{color:#5BC2E7}
+main::before,.hero,.hero-band{background:#003865!important}
+main::after{display:none!important}
+#portalHome>.sub,main:not(:has(#portalHome))>h1+p{color:#FFFFFF!important}
+footer{color:#FFFFFF!important}
+.portal-choice,.choice,.product,.dialog,.card,.panel,.compare-bar,
+.category-menu,.concern-checks,.category-menu button{
+  background-color:#FFFFFF;
+}
+.portal-choice,.choice,.product,.card,.panel,.compare-bar,.concern-checks{
+  border-color:#425563;
+}
+.portal-choice:nth-child(n){--accent:#0076A8!important}
+.portal-choice::before,.product::before,.portal-choice .portal-action{
+  background:#0076A8!important;
+}
+.portal-choice .portal-action{color:#FFFFFF!important}
+.nav-icon,.doc-icon{
+  background:#0076A8!important;
+  color:#FFFFFF!important;
+}
+.category-symbol,.choice .symbol{
+  background:#FFFFFF!important;
+  color:#0076A8!important;
+  border:1px solid #0076A8;
+}
+.photo,.product-image,.home-photo-group{background:#FFFFFF}
+.pill,.portal-back,.back,.close,.secondaryBtn,.compare-button,
+.compare-table button,.cart-controls button,.category-menu button,
+.password-toggle{
+  background:#FFFFFF!important;
+  color:#003865!important;
+  border:1px solid #0076A8!important;
+}
+.cartBtn,.actions .add,.actions>.add,.product-resource-link,
+.parts-locator-link,.brand-page button:not(.secondary),
+button.primary,.button,.btn,.call,.actions a:first-child,
+.portal-choice .portal-action,.card a:not(.doc-link){
+  background:#003865!important;
+  color:#FFFFFF!important;
+  border-color:#003865!important;
+  box-shadow:none!important;
+}
+.cartBtn:hover,.actions .add:hover,.product-resource-link:hover,
+.parts-locator-link:hover,.brand-page button:hover:not(:disabled),
+button.primary:hover,.button:hover,.btn:hover:not(:disabled),.call:hover,
+.actions a:first-child:hover,.card a:not(.doc-link):hover,
+.portal-choice:hover .portal-action,.portal-choice:focus-visible .portal-action{
+  background:#0076A8!important;
+  color:#FFFFFF!important;
+}
+.portal-back:hover,.back:hover,.close:hover,.secondaryBtn:hover,
+.compare-button:hover,.compare-table button:hover,.cart-controls button:hover,
+.category-menu button:hover,.password-toggle:hover{
+  background:#0076A8!important;
+  color:#FFFFFF!important;
+}
+.product .body,.card,.brand-page .panel{color:#003865}
+.intro,.sub,.status,.detail,.muted,.instructions,.doc-type,.doc-arrow,
+footer .footer-inner{color:#425563}
