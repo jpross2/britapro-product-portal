@@ -494,10 +494,7 @@
     "skus": [
       "BPUV009",
       "BPUV016",
-      "BPUV030",
-      "BPUV009BF",
-      "BPUV016BF",
-      "BPUV030BF"
+      "BPUV030"
     ],
     "manualPath": "manuals/whole-house/Platinum_Ultraviolet_Manual.DIGITAL.pdf"
   },
